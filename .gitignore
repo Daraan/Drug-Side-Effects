@@ -7,5 +7,5 @@ files/SNAP-A-Box-prefixed.ttl
 .breakpoints
 env/
 *.zip
-
-
+*.tsv
+*.csv
