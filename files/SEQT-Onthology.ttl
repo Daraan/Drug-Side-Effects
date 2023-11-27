@@ -1,0 +1,49 @@
+@prefix : <http://example.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix db_voc: <http://bio2rdf.org/drugbank_vocabulary:> .
+@prefix db: <http://bio2rdf.org/drugbank:>.
+@prefix sider: <http://bio2rdf.org/sider_vocabulary:> .
+@prefix umls: <http://bio2rdf.org/umls:> .
+
+###Properties### 
+
+db_voc:ddi-interactor-in a owl:ObjectProperty; 
+			rdfs:domain sider:Drug;
+			rdfs:range db_voc:Drug-Drug-Interaction.
+			
+:has-ddi-interactor owl:inverseOf db_voc:ddi-interactor-in.			
+
+sider:side-effect a owl:ObjectProperty; 
+		    rdfs:domain db_voc:Pharmaceutical;
+		    rdfs:range umls:Resource.	
+
+sider:preferred-term a owl:DatatypeProperty; 
+		     a owl:FunctionalProperty; 	 
+		     rdfs:domain umls:Resource; 
+		     rdfs:range rdfs:Literal.	
+		     			
+###Classes###
+
+sider:Drug a owl:Class; 
+	   rdfs:subClassOf db_voc:Pharmaceutical.
+	    	
+sider:Combination-Drug a owl:Class; 
+			rdfs:subClassOf db_voc:Pharmaceutical.
+
+db_voc:Drug-Drug-Interaction a owl:Class.
+
+umls:Resource a owl:Class.
+
+
+### Restrictions ###
+
+db:Drug-Drug-Interaction rdfs:subClassOf [
+	a owl:Restriction ;
+	owl:onProperty :has-ddi-interactor ;
+	owl:minQualifiedCardinality "2"^^xsd:integer ;
+	owl:onClass :Drug ] .
+

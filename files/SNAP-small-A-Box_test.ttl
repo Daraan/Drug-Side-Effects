@@ -1,0 +1,1212 @@
+@prefix : <http://example.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix db_voc: <http://bio2rdf.org/drugbank_vocabulary:> .
+@prefix db: <http://bio2rdf.org/drugbank:>.
+@prefix sider: <http://bio2rdf.org/sider_vocabulary:> .
+@prefix umls: <http://bio2rdf.org/umls:> .
+
+
+:CID003062316 sider:side-effect umls:C1096328.
+:CID003062316 a sider:Drug.
+umls:C1096328 a umls:Resource.
+umls:C1096328 sider:preferred-term "central nervous system mass"@en.
+:CID003062316 sider:side-effect umls:C0162830.
+:CID003062316 a sider:Drug.
+umls:C0162830 a umls:Resource.
+umls:C0162830 sider:preferred-term "Photosensitivity reaction"@en.
+:CID003062316 sider:side-effect umls:C1611725.
+:CID003062316 a sider:Drug.
+umls:C1611725 a umls:Resource.
+umls:C1611725 sider:preferred-term "leukaemic infiltration brain"@en.
+:CID003062316 sider:side-effect umls:C0541767.
+:CID003062316 a sider:Drug.
+umls:C0541767 a umls:Resource.
+umls:C0541767 sider:preferred-term "platelet adhesiveness abnormal"@en.
+:CID003062316 sider:side-effect umls:C0242973.
+:CID003062316 a sider:Drug.
+umls:C0242973 a umls:Resource.
+umls:C0242973 sider:preferred-term "Ventricular dysfunction"@en.
+:CID003062316 sider:side-effect umls:C1167962.
+:CID003062316 a sider:Drug.
+umls:C1167962 a umls:Resource.
+umls:C1167962 sider:preferred-term "cytogenetic analysis abnormal"@en.
+:CID003062316 sider:side-effect umls:C0042023.
+:CID003062316 a sider:Drug.
+umls:C0042023 a umls:Resource.
+umls:C0042023 sider:preferred-term "pollakiuria"@en.
+:CID003062316 sider:side-effect umls:C0948183.
+:CID003062316 a sider:Drug.
+umls:C0948183 a umls:Resource.
+umls:C0948183 sider:preferred-term "myelocytosis"@en.
+:CID003062316 sider:side-effect umls:C0744403.
+:CID003062316 a sider:Drug.
+umls:C0744403 a umls:Resource.
+umls:C0744403 sider:preferred-term "gingival infection"@en.
+:CID003062316 sider:side-effect umls:C0748390.
+:CID003062316 a sider:Drug.
+umls:C0748390 a umls:Resource.
+umls:C0748390 sider:preferred-term "retroperitoneal lymphadenopathy"@en.
+:CID003062316 sider:side-effect umls:C0729847.
+:CID003062316 a sider:Drug.
+umls:C0729847 a umls:Resource.
+umls:C0729847 sider:preferred-term "iliac artery stenosis"@en.
+:CID003062316 sider:side-effect umls:C1096135.
+:CID003062316 a sider:Drug.
+umls:C1096135 a umls:Resource.
+umls:C1096135 sider:preferred-term "neutrophil count decreased"@en.
+:CID003062316 sider:side-effect umls:C0340861.
+:CID003062316 a sider:Drug.
+umls:C0340861 a umls:Resource.
+umls:C0340861 sider:preferred-term "electromechanical dissociation"@en.
+:CID003062316 sider:side-effect umls:C1262018.
+:CID003062316 a sider:Drug.
+umls:C1262018 a umls:Resource.
+umls:C1262018 sider:preferred-term "transplant failure"@en.
+:CID003062316 sider:side-effect umls:C0036982.
+:CID003062316 a sider:Drug.
+umls:C0036982 a umls:Resource.
+umls:C0036982 sider:preferred-term "shock haemorrhagic"@en.
+:CID003062316 sider:side-effect umls:C1698400.
+:CID003062316 a sider:Drug.
+umls:C1698400 a umls:Resource.
+umls:C1698400 sider:preferred-term "incision site oedema"@en.
+:CID003062316 sider:side-effect umls:C1141948.
+:CID003062316 a sider:Drug.
+umls:C1141948 a umls:Resource.
+umls:C1141948 sider:preferred-term "troponin increased"@en.
+:CID003062316 sider:side-effect umls:C0038565.
+:CID003062316 a sider:Drug.
+umls:C0038565 a umls:Resource.
+umls:C0038565 sider:preferred-term "subdiaphragmatic abscess"@en.
+:CID003062316 sider:side-effect umls:C0271051.
+:CID003062316 a sider:Drug.
+umls:C0271051 a umls:Resource.
+umls:C0271051 sider:preferred-term "Macular oedema"@en.
+:CID003062316 sider:side-effect umls:C0155765.
+:CID003062316 a sider:Drug.
+umls:C0155765 a umls:Resource.
+umls:C0155765 sider:preferred-term "capillary disorder"@en.
+:CID003062316 sider:side-effect umls:C0009760.
+:CID003062316 a sider:Drug.
+umls:C0009760 a umls:Resource.
+umls:C0009760 sider:preferred-term "Conjunctival haemorrhage"@en.
+:CID003062316 sider:side-effect umls:C0948344.
+:CID003062316 a sider:Drug.
+umls:C0948344 a umls:Resource.
+umls:C0948344 sider:preferred-term "escherichia urinary tract infection"@en.
+:CID003062316 sider:side-effect umls:C1519353.
+:CID003062316 a sider:Drug.
+umls:C1519353 a umls:Resource.
+umls:C1519353 sider:preferred-term "Rash papular"@en.
+:CID003062316 sider:side-effect umls:C0221201.
+:CID003062316 a sider:Drug.
+umls:C0221201 a umls:Resource.
+umls:C0221201 sider:preferred-term "Rash macular"@en.
+:CID003062316 sider:side-effect umls:C1112313.
+:CID003062316 a sider:Drug.
+umls:C1112313 a umls:Resource.
+umls:C1112313 sider:preferred-term "gastrointestinal mucosal disorder"@en.
+:CID003062316 sider:side-effect umls:C0008733.
+:CID003062316 a sider:Drug.
+umls:C0008733 a umls:Resource.
+umls:C0008733 sider:preferred-term "chylothorax"@en.
+:CID003062316 sider:side-effect umls:C0520863.
+:CID003062316 a sider:Drug.
+umls:C0520863 a umls:Resource.
+umls:C0520863 sider:preferred-term "diastolic dysfunction"@en.
+:CID003062316 sider:side-effect umls:C0151610.
+:CID003062316 a sider:Drug.
+umls:C0151610 a umls:Resource.
+umls:C0151610 sider:preferred-term "Tongue disorder"@en.
+:CID003062316 sider:side-effect umls:C0155966.
+:CID003062316 a sider:Drug.
+umls:C0155966 a umls:Resource.
+umls:C0155966 sider:preferred-term "diverticulum"@en.
+:CID003062316 sider:side-effect umls:C0151205.
+:CID003062316 a sider:Drug.
+umls:C0151205 a umls:Resource.
+umls:C0151205 sider:preferred-term "Periorbital oedema"@en.
+:CID003062316 sider:side-effect umls:C0264490.
+:CID003062316 a sider:Drug.
+umls:C0264490 a umls:Resource.
+umls:C0264490 sider:preferred-term "acute respiratory failure"@en.
+:CID003062316 sider:side-effect umls:C0936227.
+:CID003062316 a sider:Drug.
+umls:C0936227 a umls:Resource.
+umls:C0936227 sider:preferred-term "abnormal loss of weight"@en.
+:CID003062316 sider:side-effect umls:C0277585.
+:CID003062316 a sider:Drug.
+umls:C0277585 a umls:Resource.
+umls:C0277585 sider:preferred-term "drug intolerance"@en.
+:CID003062316 sider:side-effect umls:C0025293.
+:CID003062316 a sider:Drug.
+umls:C0025293 a umls:Resource.
+umls:C0025293 sider:preferred-term "meningitis listeria"@en.
+:CID003062316 sider:side-effect umls:C0398370.
+:CID003062316 a sider:Drug.
+umls:C0398370 a umls:Resource.
+umls:C0398370 sider:preferred-term "lipoedema"@en.
+:CID003062316 sider:side-effect umls:C0264714.
+:CID003062316 a sider:Drug.
+umls:C0264714 a umls:Resource.
+umls:C0264714 sider:preferred-term "cardiac failure acute"@en.
+:CID003062316 sider:side-effect umls:C0948525.
+:CID003062316 a sider:Drug.
+umls:C0948525 a umls:Resource.
+umls:C0948525 sider:preferred-term "musculoskeletal stiffness"@en.
+:CID003062316 sider:side-effect umls:C2830004.
+:CID003062316 a sider:Drug.
+umls:C2830004 a umls:Resource.
+umls:C2830004 sider:preferred-term "Somnolence"@en.
+:CID003062316 sider:side-effect umls:C0008625.
+:CID003062316 a sider:Drug.
+umls:C0008625 a umls:Resource.
+umls:C0008625 sider:preferred-term "cytogenetic abnormality"@en.
+:CID003062316 sider:side-effect umls:C0235437.
+:CID003062316 a sider:Drug.
+umls:C0235437 a umls:Resource.
+umls:C0235437 sider:preferred-term "Gravitational oedema"@en.
+:CID003062316 sider:side-effect umls:C0039496.
+:CID003062316 a sider:Drug.
+umls:C0039496 a umls:Resource.
+umls:C0039496 sider:preferred-term "temporomandibular joint syndrome"@en.
+:CID003062316 sider:side-effect umls:C0853068.
+:CID003062316 a sider:Drug.
+umls:C0853068 a umls:Resource.
+umls:C0853068 sider:preferred-term "glomerular filtration rate decreased"@en.
+:CID003062316 sider:side-effect umls:C0015402.
+:CID003062316 a sider:Drug.
+umls:C0015402 a umls:Resource.
+umls:C0015402 sider:preferred-term "Eye haemorrhage"@en.
+:CID003062316 sider:side-effect umls:C0239981.
+:CID003062316 a sider:Drug.
+umls:C0239981 a umls:Resource.
+umls:C0239981 sider:preferred-term "hypoalbuminaemia"@en.
+:CID003062316 sider:side-effect umls:C0155895.
+:CID003062316 a sider:Drug.
+umls:C0155895 a umls:Resource.
+umls:C0155895 sider:preferred-term "acute pulmonary oedema"@en.
+:CID003062316 sider:side-effect umls:C0520600.
+:CID003062316 a sider:Drug.
+umls:C0520600 a umls:Resource.
+umls:C0520600 sider:preferred-term "cardio-respiratory arrest"@en.
+:CID003062316 sider:side-effect umls:C0919780.
+:CID003062316 a sider:Drug.
+umls:C0919780 a umls:Resource.
+umls:C0919780 sider:preferred-term "metamyelocyte count increased"@en.
+:CID003062316 sider:side-effect umls:C0237849.
+:CID003062316 a sider:Drug.
+umls:C0237849 a umls:Resource.
+umls:C0237849 sider:preferred-term "skin desquamation"@en.
+:CID003062316 sider:side-effect umls:C2242501.
+:CID003062316 a sider:Drug.
+umls:C2242501 a umls:Resource.
+umls:C2242501 sider:preferred-term "brain natriuretic peptide"@en.
+:CID003062316 sider:side-effect umls:C0023311.
+:CID003062316 a sider:Drug.
+umls:C0023311 a umls:Resource.
+umls:C0023311 sider:preferred-term "intraocular lens implant"@en.
+:CID003062316 sider:side-effect umls:C0017178.
+:CID003062316 a sider:Drug.
+umls:C0017178 a umls:Resource.
+umls:C0017178 sider:preferred-term "Gastrointestinal disorder"@en.
+:CID003062316 sider:side-effect umls:C0849916.
+:CID003062316 a sider:Drug.
+umls:C0849916 a umls:Resource.
+umls:C0849916 sider:preferred-term "generalised erythema"@en.
+:CID003062316 sider:side-effect umls:C0042075.
+:CID003062316 a sider:Drug.
+umls:C0042075 a umls:Resource.
+umls:C0042075 sider:preferred-term "Urinary tract disorder"@en.
+:CID003062316 sider:side-effect umls:C0021080.
+:CID003062316 a sider:Drug.
+umls:C0021080 a umls:Resource.
+umls:C0021080 sider:preferred-term "immunosuppression"@en.
+:CID003062316 sider:side-effect umls:C0854467.
+:CID003062316 a sider:Drug.
+umls:C0854467 a umls:Resource.
+umls:C0854467 sider:preferred-term "Pancytopenia"@en.
+:CID003062316 sider:side-effect umls:C1963789.
+:CID003062316 a sider:Drug.
+umls:C1963789 a umls:Resource.
+umls:C1963789 sider:preferred-term "genital swelling"@en.
+:CID003062316 sider:side-effect umls:C0021368.
+:CID003062316 a sider:Drug.
+umls:C0021368 a umls:Resource.
+umls:C0021368 sider:preferred-term "Inflammation"@en.
+:CID003062316 sider:side-effect umls:C0019372.
+:CID003062316 a sider:Drug.
+umls:C0019372 a umls:Resource.
+umls:C0019372 sider:preferred-term "herpes virus infection"@en.
+:CID003062316 sider:side-effect umls:C0241669.
+:CID003062316 a sider:Drug.
+umls:C0241669 a umls:Resource.
+umls:C0241669 sider:preferred-term "venous occlusion"@en.
+:CID003062316 sider:side-effect umls:C0233472.
+:CID003062316 a sider:Drug.
+umls:C0233472 a umls:Resource.
+umls:C0233472 sider:preferred-term "affect lability"@en.
+:CID003062316 sider:side-effect umls:C0278678.
+:CID003062316 a sider:Drug.
+umls:C0278678 a umls:Resource.
+umls:C0278678 sider:preferred-term "metastatic renal cell carcinoma"@en.
+:CID003062316 sider:side-effect umls:C0031042.
+:CID003062316 a sider:Drug.
+umls:C0031042 a umls:Resource.
+umls:C0031042 sider:preferred-term "pericardial excision"@en.
+:CID003062316 sider:side-effect umls:C0151578.
+:CID003062316 a sider:Drug.
+umls:C0151578 a umls:Resource.
+umls:C0151578 sider:preferred-term "Blood creatinine increased"@en.
+:CID003062316 sider:side-effect umls:C0851341.
+:CID003062316 a sider:Drug.
+umls:C0851341 a umls:Resource.
+umls:C0851341 sider:preferred-term "Infestation"@en.
+:CID003062316 sider:side-effect umls:C0008370.
+:CID003062316 a sider:Drug.
+umls:C0008370 a umls:Resource.
+umls:C0008370 sider:preferred-term "Cholestasis"@en.
+:CID003062316 sider:side-effect umls:C0346156.
+:CID003062316 a sider:Drug.
+umls:C0346156 a umls:Resource.
+umls:C0346156 sider:preferred-term "benign breast neoplasm"@en.
+:CID003062316 sider:side-effect umls:C0241832.
+:CID003062316 a sider:Drug.
+umls:C0241832 a umls:Resource.
+umls:C0241832 sider:preferred-term "cerebrovascular insufficiency"@en.
+:CID003062316 sider:side-effect umls:C0333472.
+:CID003062316 a sider:Drug.
+umls:C0333472 a umls:Resource.
+umls:C0333472 sider:preferred-term "epidermolysis"@en.
+:CID003062316 sider:side-effect umls:C0450027.
+:CID003062316 a sider:Drug.
+umls:C0450027 a umls:Resource.
+umls:C0450027 sider:preferred-term "accidental exposure"@en.
+:CID003062316 sider:side-effect umls:C0238106.
+:CID003062316 a sider:Drug.
+umls:C0238106 a umls:Resource.
+umls:C0238106 sider:preferred-term "clostridium difficile colitis"@en.
+:CID003062316 sider:side-effect umls:C0151878.
+:CID003062316 a sider:Drug.
+umls:C0151878 a umls:Resource.
+umls:C0151878 sider:preferred-term "electrocardiogram qt prolonged"@en.
+:CID003062316 sider:side-effect umls:C0853117.
+:CID003062316 a sider:Drug.
+umls:C0853117 a umls:Resource.
+umls:C0853117 sider:preferred-term "blood testosterone decreased"@en.
+:CID003062316 sider:side-effect umls:C0263970.
+:CID003062316 a sider:Drug.
+umls:C0263970 a umls:Resource.
+umls:C0263970 sider:preferred-term "tendon rupture"@en.
+:CID003062316 sider:side-effect umls:C0007131.
+:CID003062316 a sider:Drug.
+umls:C0007131 a umls:Resource.
+umls:C0007131 sider:preferred-term "non-small cell lung cancer"@en.
+:CID003062316 sider:side-effect umls:C0242698.
+:CID003062316 a sider:Drug.
+umls:C0242698 a umls:Resource.
+umls:C0242698 sider:preferred-term "left ventricular dysfunction"@en.
+:CID003062316 sider:side-effect umls:C1096131.
+:CID003062316 a sider:Drug.
+umls:C1096131 a umls:Resource.
+umls:C1096131 sider:preferred-term "csf monocyte count increased"@en.
+:CID003062316 sider:side-effect umls:C0877322.
+:CID003062316 a sider:Drug.
+umls:C0877322 a umls:Resource.
+umls:C0877322 sider:preferred-term "muscle tightness"@en.
+:CID003062316 sider:side-effect umls:C0877248.
+:CID003062316 a sider:Drug.
+umls:C0877248 a umls:Resource.
+umls:C0877248 sider:preferred-term "adverse event"@en.
+:CID003062316 sider:side-effect umls:C0423791.
+:CID003062316 a sider:Drug.
+umls:C0423791 a umls:Resource.
+umls:C0423791 sider:preferred-term "Rash maculo-papular"@en.
+:CID003062316 sider:side-effect umls:C0549253.
+:CID003062316 a sider:Drug.
+umls:C0549253 a umls:Resource.
+umls:C0549253 sider:preferred-term "bladder dilatation"@en.
+:CID003062316 sider:side-effect umls:C0151609.
+:CID003062316 a sider:Drug.
+umls:C0151609 a umls:Resource.
+umls:C0151609 sider:preferred-term "Scrotal oedema"@en.
+:CID003062316 sider:side-effect umls:C1328317.
+:CID003062316 a sider:Drug.
+umls:C1328317 a umls:Resource.
+umls:C1328317 sider:preferred-term "ankle brachial index decreased"@en.
+:CID003062316 sider:side-effect umls:C0007222.
+:CID003062316 a sider:Drug.
+umls:C0007222 a umls:Resource.
+umls:C0007222 sider:preferred-term "Cardiovascular disorder"@en.
+:CID003062316 sider:side-effect umls:C0042790.
+:CID003062316 a sider:Drug.
+umls:C0042790 a umls:Resource.
+umls:C0042790 sider:preferred-term "Visual impairment"@en.
+:CID003062316 sider:side-effect umls:C0948374.
+:CID003062316 a sider:Drug.
+umls:C0948374 a umls:Resource.
+umls:C0948374 sider:preferred-term "large intestinal ulcer"@en.
+:CID003062316 sider:side-effect umls:C0333355.
+:CID003062316 a sider:Drug.
+umls:C0333355 a umls:Resource.
+umls:C0333355 sider:preferred-term "mucosal inflammation"@en.
+:CID003062316 sider:side-effect umls:C0947846.
+:CID003062316 a sider:Drug.
+umls:C0947846 a umls:Resource.
+umls:C0947846 sider:preferred-term "gastrointestinal disorder"@en.
+:CID003062316 sider:side-effect umls:C1869056.
+:CID003062316 a sider:Drug.
+umls:C1869056 a umls:Resource.
+umls:C1869056 sider:preferred-term "supraventricular tachyarrhythmia"@en.
+:CID003062316 sider:side-effect umls:C0151603.
+:CID003062316 a sider:Drug.
+umls:C0151603 a umls:Resource.
+umls:C0151603 sider:preferred-term "Generalised oedema"@en.
+:CID003062316 sider:side-effect umls:C1112192.
+:CID003062316 a sider:Drug.
+umls:C1112192 a umls:Resource.
+umls:C1112192 sider:preferred-term "erythrosis"@en.
+:CID003062316 sider:side-effect umls:C0279025.
+:CID003062316 a sider:Drug.
+umls:C0279025 a umls:Resource.
+umls:C0279025 sider:preferred-term "hormone therapy"@en.
+:CID003062316 sider:side-effect umls:C0020312.
+:CID003062316 a sider:Drug.
+umls:C0020312 a umls:Resource.
+umls:C0020312 sider:preferred-term "hydrothorax"@en.
+:CID003062316 sider:side-effect umls:C2242704.
+:CID003062316 a sider:Drug.
+umls:C2242704 a umls:Resource.
+umls:C2242704 sider:preferred-term "chronic myeloid leukaemia transformation"@en.
+:CID003062316 sider:side-effect umls:C0206160.
+:CID003062316 a sider:Drug.
+umls:C0206160 a umls:Resource.
+umls:C0206160 sider:preferred-term "reticulocytosis"@en.
+:CID003062316 sider:side-effect umls:C0311468.
+:CID003062316 a sider:Drug.
+umls:C0311468 a umls:Resource.
+umls:C0311468 sider:preferred-term "Blood bilirubin increased"@en.
+:CID003062316 sider:side-effect umls:C0743400.
+:CID003062316 a sider:Drug.
+umls:C0743400 a umls:Resource.
+umls:C0743400 sider:preferred-term "Ejection fraction decreased"@en.
+:CID003062316 sider:side-effect umls:C0919976.
+:CID003062316 a sider:Drug.
+umls:C0919976 a umls:Resource.
+umls:C0919976 sider:preferred-term "renal cancer metastatic"@en.
+:CID003062316 sider:side-effect umls:C0424091.
+:CID003062316 a sider:Drug.
+umls:C0424091 a umls:Resource.
+umls:C0424091 sider:preferred-term "decreased interest"@en.
+:CID003062316 sider:side-effect umls:C1112564.
+:CID003062316 a sider:Drug.
+umls:C1112564 a umls:Resource.
+umls:C1112564 sider:preferred-term "myopericarditis"@en.
+:CID003062316 sider:side-effect umls:C0234632.
+:CID003062316 a sider:Drug.
+umls:C0234632 a umls:Resource.
+umls:C0234632 sider:preferred-term "Visual acuity reduced"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0151714.
+umls:C0151714 sider:preferred-term "hypermagnesemia"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0035344.
+umls:C0035344 sider:preferred-term "retinopathy of prematurity"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0004144.
+umls:C0004144 sider:preferred-term "atelectasis"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0002063.
+umls:C0002063 sider:preferred-term "alkalosis"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0004604.
+umls:C0004604 sider:preferred-term "Back Ache"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0034063.
+umls:C0034063 sider:preferred-term "lung edema"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0085631.
+umls:C0085631 sider:preferred-term "agitated"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0013384.
+umls:C0013384 sider:preferred-term "abnormal movements"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0001122.
+umls:C0001122 sider:preferred-term "Acidosis"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0034150.
+umls:C0034150 sider:preferred-term "peliosis"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0038000.
+umls:C0038000 sider:preferred-term "rupture of spleen"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0003578.
+umls:C0003578 sider:preferred-term "Apnea"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0013182.
+umls:C0013182 sider:preferred-term "Drug hypersensitivity"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0016204.
+umls:C0016204 sider:preferred-term "flatulence"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0242429.
+umls:C0242429 sider:preferred-term "pain in throat"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0020517.
+umls:C0020517 sider:preferred-term "allergies"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0040034.
+umls:C0040034 sider:preferred-term "thrombocytopenia"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0428977.
+umls:C0428977 sider:preferred-term "bradycardia"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0235896.
+umls:C0235896 sider:preferred-term "lung infiltration"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0019080.
+umls:C0019080 sider:preferred-term "Bleeding"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0158986.
+umls:C0158986 sider:preferred-term "hypoglycaemia neonatal"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0236124.
+umls:C0236124 sider:preferred-term "Gastrointestinal Obstruction"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0020456.
+umls:C0020456 sider:preferred-term "hyperglycaemia"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0031154.
+umls:C0031154 sider:preferred-term "peritonitis"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0020615.
+umls:C0020615 sider:preferred-term "hypoglycaemia"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0000731.
+umls:C0000731 sider:preferred-term "abdominal distension"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0018790.
+umls:C0018790 sider:preferred-term "asystole"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0007785.
+umls:C0007785 sider:preferred-term "cerebral infarct"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0242184.
+umls:C0242184 sider:preferred-term "hypoxia"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0013404.
+umls:C0013404 sider:preferred-term "Difficulty breathing"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0020672.
+umls:C0020672 sider:preferred-term "decreased body temperature"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0030446.
+umls:C0030446 sider:preferred-term "adynamic ileus"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0243026.
+umls:C0243026 sider:preferred-term "sepsis"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0151723.
+umls:C0151723 sider:preferred-term "Hypomagnesaemia"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0035220.
+umls:C0035220 sider:preferred-term "neonatal respiratory distress syndrome"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0035222.
+umls:C0035222 sider:preferred-term "Acute Respiratory Distress Syndrome"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0023798.
+umls:C0023798 sider:preferred-term "lipoma"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0030790.
+umls:C0030790 sider:preferred-term "pelvic infection"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0003611.
+umls:C0003611 sider:preferred-term "appendectomy"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0016199.
+umls:C0016199 sider:preferred-term "flank pain"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0032326.
+umls:C0032326 sider:preferred-term "pneumothorax"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0003615.
+umls:C0003615 sider:preferred-term "appendicitis"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0038379.
+umls:C0038379 sider:preferred-term "Strabismus"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0020598.
+umls:C0020598 sider:preferred-term "Blood calcium decreased"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C1145670.
+umls:C1145670 sider:preferred-term "respiratory failure"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0020542.
+umls:C0020542 sider:preferred-term "pulmonary hypertension"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0020440.
+umls:C0020440 sider:preferred-term "Hypercapnia"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0021845.
+umls:C0021845 sider:preferred-term "intestinal perforation"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0023518.
+umls:C0023518 sider:preferred-term "leucocytosis"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0024115.
+umls:C0024115 sider:preferred-term "Disorder Lung"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0020040.
+umls:C0020040 sider:preferred-term "hot flash"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0020649.
+umls:C0020649 sider:preferred-term "arterial pressure NOS decreased"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0220981.
+umls:C0220981 sider:preferred-term "metabolic acidosis"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0010692.
+umls:C0010692 sider:preferred-term "Bladder inflammation"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0003962.
+umls:C0003962 sider:preferred-term "ascites"@en.
+:CID000002173 a sider:Drug.
+:CID000003345 a sider:Drug.
+:CID000002173_CID000003345 a sider:Combination-Drug.
+:CID000002173_CID000003345 a db_voc:Drug-Drug-Interaction.
+:CID000002173 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000003345 db_voc:ddi-interactor-in :CID000002173_CID000003345.
+:CID000002173_CID000003345 sider:side-effect umls:C0013274.
+umls:C0013274 sider:preferred-term "patent ductus arteriosis"@en.
+:CID000005206 a sider:Drug.
+:CID000009433 a sider:Drug.
+:CID000005206_CID000009433 a sider:Combination-Drug.
+:CID000005206_CID000009433 a db_voc:Drug-Drug-Interaction.
+:CID000005206 db_voc:ddi-interactor-in :CID000005206_CID000009433.
+:CID000009433 db_voc:ddi-interactor-in :CID000005206_CID000009433.
+:CID000005206_CID000009433 sider:side-effect umls:C0040034.
+umls:C0040034 sider:preferred-term "thrombocytopenia"@en.
+:CID000005206 a sider:Drug.
+:CID000009433 a sider:Drug.
+:CID000005206_CID000009433 a sider:Combination-Drug.
+:CID000005206_CID000009433 a db_voc:Drug-Drug-Interaction.
+:CID000005206 db_voc:ddi-interactor-in :CID000005206_CID000009433.
+:CID000009433 db_voc:ddi-interactor-in :CID000005206_CID000009433.
+:CID000005206_CID000009433 sider:side-effect umls:C0039239.
+umls:C0039239 sider:preferred-term "sinus tachycardia"@en.
+:CID000005206 a sider:Drug.
+:CID000009433 a sider:Drug.
+:CID000005206_CID000009433 a sider:Combination-Drug.
+:CID000005206_CID000009433 a db_voc:Drug-Drug-Interaction.
+:CID000005206 db_voc:ddi-interactor-in :CID000005206_CID000009433.
+:CID000009433 db_voc:ddi-interactor-in :CID000005206_CID000009433.
+:CID000005206_CID000009433 sider:side-effect umls:C0038450.
+umls:C0038450 sider:preferred-term "stridor"@en.
+:CID000005206 a sider:Drug.
+:CID000009433 a sider:Drug.
+:CID000005206_CID000009433 a sider:Combination-Drug.
+:CID000005206_CID000009433 a db_voc:Drug-Drug-Interaction.
+:CID000005206 db_voc:ddi-interactor-in :CID000005206_CID000009433.
+:CID000009433 db_voc:ddi-interactor-in :CID000005206_CID000009433.
+:CID000005206_CID000009433 sider:side-effect umls:C0497247.
+umls:C0497247 sider:preferred-term "arterial pressure NOS increased"@en.
+:CID000005206 a sider:Drug.
+:CID000009433 a sider:Drug.
+:CID000005206_CID000009433 a sider:Combination-Drug.
+:CID000005206_CID000009433 a db_voc:Drug-Drug-Interaction.
+:CID000005206 db_voc:ddi-interactor-in :CID000005206_CID000009433.
+:CID000009433 db_voc:ddi-interactor-in :CID000005206_CID000009433.
+:CID000005206_CID000009433 sider:side-effect umls:C0398353.
+umls:C0398353 sider:preferred-term "Hypoventilation"@en.
+:CID000005206 a sider:Drug.
+:CID000009433 a sider:Drug.
+:CID000005206_CID000009433 a sider:Combination-Drug.
+:CID000005206_CID000009433 a db_voc:Drug-Drug-Interaction.
+:CID000005206 db_voc:ddi-interactor-in :CID000005206_CID000009433.
+:CID000009433 db_voc:ddi-interactor-in :CID000005206_CID000009433.
+:CID000005206_CID000009433 sider:side-effect umls:C0013604.
+umls:C0013604 sider:preferred-term "edema"@en.
+:CID000005206 a sider:Drug.
+:CID000009433 a sider:Drug.
+:CID000005206_CID000009433 a sider:Combination-Drug.
+:CID000005206_CID000009433 a db_voc:Drug-Drug-Interaction.
+:CID000005206 db_voc:ddi-interactor-in :CID000005206_CID000009433.
+:CID000009433 db_voc:ddi-interactor-in :CID000005206_CID000009433.
+:CID000005206_CID000009433 sider:side-effect umls:C0023895.
+umls:C0023895 sider:preferred-term "disease of liver"@en.
+:CID000005206 a sider:Drug.
+:CID000009433 a sider:Drug.
+:CID000005206_CID000009433 a sider:Combination-Drug.
+:CID000005206_CID000009433 a db_voc:Drug-Drug-Interaction.
+:CID000005206 db_voc:ddi-interactor-in :CID000005206_CID000009433.
+:CID000009433 db_voc:ddi-interactor-in :CID000005206_CID000009433.
+:CID000005206_CID000009433 sider:side-effect umls:C0151904.
+umls:C0151904 sider:preferred-term "Aspartate Aminotransferase Increase"@en.
+:CID000005206 a sider:Drug.
+:CID000009433 a sider:Drug.
+:CID000005206_CID000009433 a sider:Combination-Drug.
+:CID000005206_CID000009433 a db_voc:Drug-Drug-Interaction.
+:CID000005206 db_voc:ddi-interactor-in :CID000005206_CID000009433.
+:CID000009433 db_voc:ddi-interactor-in :CID000005206_CID000009433.
+:CID000005206_CID000009433 sider:side-effect umls:C0277925.
+umls:C0277925 sider:preferred-term "Cold extremities"@en.
+:CID000005206 a sider:Drug.
+:CID000009433 a sider:Drug.
+:CID000005206_CID000009433 a sider:Combination-Drug.
+:CID000005206_CID000009433 a db_voc:Drug-Drug-Interaction.
+:CID000005206 db_voc:ddi-interactor-in :CID000005206_CID000009433.
+:CID000009433 db_voc:ddi-interactor-in :CID000005206_CID000009433.
+:CID000005206_CID000009433 sider:side-effect umls:C0013182.
+umls:C0013182 sider:preferred-term "Drug hypersensitivity"@en.
+:CID000005206 a sider:Drug.
+:CID000009433 a sider:Drug.
+:CID000005206_CID000009433 a sider:Combination-Drug.
+:CID000005206_CID000009433 a db_voc:Drug-Drug-Interaction.
+:CID000005206 db_voc:ddi-interactor-in :CID000005206_CID000009433.
+:CID000009433 db_voc:ddi-interactor-in :CID000005206_CID000009433.
+:CID000005206_CID000009433 sider:side-effect umls:C0016382.
+umls:C0016382 sider:preferred-term "facial flushing"@en.
+:CID000005206 a sider:Drug.
+:CID000009433 a sider:Drug.
+:CID000005206_CID000009433 a sider:Combination-Drug.
+:CID000005206_CID000009433 a db_voc:Drug-Drug-Interaction.
+:CID000005206 db_voc:ddi-interactor-in :CID000005206_CID000009433.
+:CID000009433 db_voc:ddi-interactor-in :CID000005206_CID000009433.
+:CID000005206_CID000009433 sider:side-effect umls:C0002792.
+umls:C0002792 sider:preferred-term "anaphylactic reaction"@en.
+:CID000003929 a sider:Drug.
+:CID000150610 a sider:Drug.
+:CID000003929_CID000150610 a sider:Combination-Drug.
+:CID000003929_CID000150610 a db_voc:Drug-Drug-Interaction.
+:CID000003929 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000150610 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000003929_CID000150610 sider:side-effect umls:C0015230.
+umls:C0015230 sider:preferred-term "eruption"@en.
+:CID000003929 a sider:Drug.
+:CID000150610 a sider:Drug.
+:CID000003929_CID000150610 a sider:Combination-Drug.
+:CID000003929_CID000150610 a db_voc:Drug-Drug-Interaction.
+:CID000003929 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000150610 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000003929_CID000150610 sider:side-effect umls:C0001339.
+umls:C0001339 sider:preferred-term "acute pancreatitis"@en.
+:CID000003929 a sider:Drug.
+:CID000150610 a sider:Drug.
+:CID000003929_CID000150610 a sider:Combination-Drug.
+:CID000003929_CID000150610 a db_voc:Drug-Drug-Interaction.
+:CID000003929 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000150610 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000003929_CID000150610 sider:side-effect umls:C0032285.
+umls:C0032285 sider:preferred-term "neumonia"@en.
+:CID000003929 a sider:Drug.
+:CID000150610 a sider:Drug.
+:CID000003929_CID000150610 a sider:Combination-Drug.
+:CID000003929_CID000150610 a db_voc:Drug-Drug-Interaction.
+:CID000003929 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000150610 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000003929_CID000150610 sider:side-effect umls:C0013384.
+umls:C0013384 sider:preferred-term "abnormal movements"@en.
+:CID000003929 a sider:Drug.
+:CID000150610 a sider:Drug.
+:CID000003929_CID000150610 a sider:Combination-Drug.
+:CID000003929_CID000150610 a db_voc:Drug-Drug-Interaction.
+:CID000003929 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000150610 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000003929_CID000150610 sider:side-effect umls:C1145670.
+umls:C1145670 sider:preferred-term "respiratory failure"@en.
+:CID000003929 a sider:Drug.
+:CID000150610 a sider:Drug.
+:CID000003929_CID000150610 a sider:Combination-Drug.
+:CID000003929_CID000150610 a db_voc:Drug-Drug-Interaction.
+:CID000003929 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000150610 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000003929_CID000150610 sider:side-effect umls:C0001418.
+umls:C0001418 sider:preferred-term "adenocarcinoma"@en.
+:CID000003929 a sider:Drug.
+:CID000150610 a sider:Drug.
+:CID000003929_CID000150610 a sider:Combination-Drug.
+:CID000003929_CID000150610 a db_voc:Drug-Drug-Interaction.
+:CID000003929 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000150610 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000003929_CID000150610 sider:side-effect umls:C0019080.
+umls:C0019080 sider:preferred-term "Bleeding"@en.
+:CID000003929 a sider:Drug.
+:CID000150610 a sider:Drug.
+:CID000003929_CID000150610 a sider:Combination-Drug.
+:CID000003929_CID000150610 a db_voc:Drug-Drug-Interaction.
+:CID000003929 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000150610 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000003929_CID000150610 sider:side-effect umls:C0040034.
+umls:C0040034 sider:preferred-term "thrombocytopenia"@en.
+:CID000003929 a sider:Drug.
+:CID000150610 a sider:Drug.
+:CID000003929_CID000150610 a sider:Combination-Drug.
+:CID000003929_CID000150610 a db_voc:Drug-Drug-Interaction.
+:CID000003929 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000150610 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000003929_CID000150610 sider:side-effect umls:C0009676.
+umls:C0009676 sider:preferred-term "confusion"@en.
+:CID000003929 a sider:Drug.
+:CID000150610 a sider:Drug.
+:CID000003929_CID000150610 a sider:Combination-Drug.
+:CID000003929_CID000150610 a db_voc:Drug-Drug-Interaction.
+:CID000003929 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000150610 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000003929_CID000150610 sider:side-effect umls:C0162429.
+umls:C0162429 sider:preferred-term "malnourished"@en.
+:CID000003929 a sider:Drug.
+:CID000150610 a sider:Drug.
+:CID000003929_CID000150610 a sider:Combination-Drug.
+:CID000003929_CID000150610 a db_voc:Drug-Drug-Interaction.
+:CID000003929 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000150610 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000003929_CID000150610 sider:side-effect umls:C0019112.
+umls:C0019112 sider:preferred-term "haemorrhoids"@en.
+:CID000003929 a sider:Drug.
+:CID000150610 a sider:Drug.
+:CID000003929_CID000150610 a sider:Combination-Drug.
+:CID000003929_CID000150610 a db_voc:Drug-Drug-Interaction.
+:CID000003929 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000150610 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000003929_CID000150610 sider:side-effect umls:C0013604.
+umls:C0013604 sider:preferred-term "edema"@en.
+:CID000003929 a sider:Drug.
+:CID000150610 a sider:Drug.
+:CID000003929_CID000150610 a sider:Combination-Drug.
+:CID000003929_CID000150610 a db_voc:Drug-Drug-Interaction.
+:CID000003929 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000150610 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000003929_CID000150610 sider:side-effect umls:C0595939.
+umls:C0595939 sider:preferred-term "still birth"@en.
+:CID000003929 a sider:Drug.
+:CID000150610 a sider:Drug.
+:CID000003929_CID000150610 a sider:Combination-Drug.
+:CID000003929_CID000150610 a db_voc:Drug-Drug-Interaction.
+:CID000003929 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000150610 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000003929_CID000150610 sider:side-effect umls:C0002871.
+umls:C0002871 sider:preferred-term "anaemia"@en.
+:CID000003929 a sider:Drug.
+:CID000150610 a sider:Drug.
+:CID000003929_CID000150610 a sider:Combination-Drug.
+:CID000003929_CID000150610 a db_voc:Drug-Drug-Interaction.
+:CID000003929 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000150610 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000003929_CID000150610 sider:side-effect umls:C0013221.
+umls:C0013221 sider:preferred-term "drug toxicity NOS"@en.
+:CID000003929 a sider:Drug.
+:CID000150610 a sider:Drug.
+:CID000003929_CID000150610 a sider:Combination-Drug.
+:CID000003929_CID000150610 a db_voc:Drug-Drug-Interaction.
+:CID000003929 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000150610 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000003929_CID000150610 sider:side-effect umls:C0750426.
+umls:C0750426 sider:preferred-term "increased white blood cell count"@en.
+:CID000003929 a sider:Drug.
+:CID000150610 a sider:Drug.
+:CID000003929_CID000150610 a sider:Combination-Drug.
+:CID000003929_CID000150610 a db_voc:Drug-Drug-Interaction.
+:CID000003929 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000150610 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000003929_CID000150610 sider:side-effect umls:C0243026.
+umls:C0243026 sider:preferred-term "sepsis"@en.
+:CID000003929 a sider:Drug.
+:CID000150610 a sider:Drug.
+:CID000003929_CID000150610 a sider:Combination-Drug.
+:CID000003929_CID000150610 a db_voc:Drug-Drug-Interaction.
+:CID000003929 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000150610 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000003929_CID000150610 sider:side-effect umls:C0085584.
+umls:C0085584 sider:preferred-term "encephalopathy"@en.
+:CID000003929 a sider:Drug.
+:CID000150610 a sider:Drug.
+:CID000003929_CID000150610 a sider:Combination-Drug.
+:CID000003929_CID000150610 a db_voc:Drug-Drug-Interaction.
+:CID000003929 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000150610 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000003929_CID000150610 sider:side-effect umls:C0003123.
+umls:C0003123 sider:preferred-term "Anorexia"@en.
+:CID000003929 a sider:Drug.
+:CID000150610 a sider:Drug.
+:CID000003929_CID000150610 a sider:Combination-Drug.
+:CID000003929_CID000150610 a db_voc:Drug-Drug-Interaction.
+:CID000003929 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000150610 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000003929_CID000150610 sider:side-effect umls:C0040822.
+umls:C0040822 sider:preferred-term "tremor"@en.
+:CID000003929 a sider:Drug.
+:CID000150610 a sider:Drug.
+:CID000003929_CID000150610 a sider:Combination-Drug.
+:CID000003929_CID000150610 a db_voc:Drug-Drug-Interaction.
+:CID000003929 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000150610 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000003929_CID000150610 sider:side-effect umls:C0018524.
+umls:C0018524 sider:preferred-term "Hallucination"@en.
+:CID000003929 a sider:Drug.
+:CID000150610 a sider:Drug.
+:CID000003929_CID000150610 a sider:Combination-Drug.
+:CID000003929_CID000150610 a db_voc:Drug-Drug-Interaction.
+:CID000003929 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000150610 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000003929_CID000150610 sider:side-effect umls:C0024117.
+umls:C0024117 sider:preferred-term "chronic obstructive airway disease"@en.
+:CID000003929 a sider:Drug.
+:CID000150610 a sider:Drug.
+:CID000003929_CID000150610 a sider:Combination-Drug.
+:CID000003929_CID000150610 a db_voc:Drug-Drug-Interaction.
+:CID000003929 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000150610 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000003929_CID000150610 sider:side-effect umls:C0013144.
+umls:C0013144 sider:preferred-term "drowsiness"@en.
+:CID000003929 a sider:Drug.
+:CID000150610 a sider:Drug.
+:CID000003929_CID000150610 a sider:Combination-Drug.
+:CID000003929_CID000150610 a db_voc:Drug-Drug-Interaction.
+:CID000003929 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000150610 db_voc:ddi-interactor-in :CID000003929_CID000150610.
+:CID000003929_CID000150610 sider:side-effect umls:C0018681.
+umls:C0018681 sider:preferred-term "Head ache"@en.
+:CID000001302 a sider:Drug.
+:CID000005064 a sider:Drug.
+:CID000001302_CID000005064 a sider:Combination-Drug.
+:CID000001302_CID000005064 a db_voc:Drug-Drug-Interaction.
+:CID000001302 db_voc:ddi-interactor-in :CID000001302_CID000005064.
+:CID000005064 db_voc:ddi-interactor-in :CID000001302_CID000005064.
+:CID000001302_CID000005064 sider:side-effect umls:C0004601.
+umls:C0004601 sider:preferred-term "back injury"@en.
+:CID000001302 a sider:Drug.
+:CID000005064 a sider:Drug.
+:CID000001302_CID000005064 a sider:Combination-Drug.
+:CID000001302_CID000005064 a db_voc:Drug-Drug-Interaction.
+:CID000001302 db_voc:ddi-interactor-in :CID000001302_CID000005064.
+:CID000005064 db_voc:ddi-interactor-in :CID000001302_CID000005064.
+:CID000001302_CID000005064 sider:side-effect umls:C0041834.
+umls:C0041834 sider:preferred-term "erythema"@en.
+:CID000001302 a sider:Drug.
+:CID000005064 a sider:Drug.
+:CID000001302_CID000005064 a sider:Combination-Drug.
+:CID000001302_CID000005064 a db_voc:Drug-Drug-Interaction.
+:CID000001302 db_voc:ddi-interactor-in :CID000001302_CID000005064.
+:CID000005064 db_voc:ddi-interactor-in :CID000001302_CID000005064.
+:CID000001302_CID000005064 sider:side-effect umls:C0004604.
+umls:C0004604 sider:preferred-term "Back Ache"@en.
+:CID000001302 a sider:Drug.
+:CID000005064 a sider:Drug.
+:CID000001302_CID000005064 a sider:Combination-Drug.
+:CID000001302_CID000005064 a db_voc:Drug-Drug-Interaction.
+:CID000001302 db_voc:ddi-interactor-in :CID000001302_CID000005064.
+:CID000005064 db_voc:ddi-interactor-in :CID000001302_CID000005064.
+:CID000001302_CID000005064 sider:side-effect umls:C0012569.
+umls:C0012569 sider:preferred-term "Diplopia"@en.
+:CID000001302 a sider:Drug.
+:CID000005064 a sider:Drug.
+:CID000001302_CID000005064 a sider:Combination-Drug.
+:CID000001302_CID000005064 a db_voc:Drug-Drug-Interaction.
+:CID000001302 db_voc:ddi-interactor-in :CID000001302_CID000005064.
+:CID000005064 db_voc:ddi-interactor-in :CID000001302_CID000005064.
+:CID000001302_CID000005064 sider:side-effect umls:C0038002.
+umls:C0038002 sider:preferred-term "enlarged spleen"@en.
+:CID000001302 a sider:Drug.
+:CID000005064 a sider:Drug.
+:CID000001302_CID000005064 a sider:Combination-Drug.
+:CID000001302_CID000005064 a db_voc:Drug-Drug-Interaction.
+:CID000001302 db_voc:ddi-interactor-in :CID000001302_CID000005064.
+:CID000005064 db_voc:ddi-interactor-in :CID000001302_CID000005064.
+:CID000001302_CID000005064 sider:side-effect umls:C0027404.
+umls:C0027404 sider:preferred-term "narcolepsy"@en.
+:CID000001302 a sider:Drug.
+:CID000005064 a sider:Drug.
+:CID000001302_CID000005064 a sider:Combination-Drug.
+:CID000001302_CID000005064 a db_voc:Drug-Drug-Interaction.
+:CID000001302 db_voc:ddi-interactor-in :CID000001302_CID000005064.
+:CID000005064 db_voc:ddi-interactor-in :CID000001302_CID000005064.
+:CID000001302_CID000005064 sider:side-effect umls:C0014863.
+umls:C0014863 sider:preferred-term "esophageal spasm"@en.
+:CID000001302 a sider:Drug.
+:CID000005064 a sider:Drug.
+:CID000001302_CID000005064 a sider:Combination-Drug.
+:CID000001302_CID000005064 a db_voc:Drug-Drug-Interaction.
+:CID000001302 db_voc:ddi-interactor-in :CID000001302_CID000005064.
+:CID000005064 db_voc:ddi-interactor-in :CID000001302_CID000005064.
+:CID000001302_CID000005064 sider:side-effect umls:C0015230.
+umls:C0015230 sider:preferred-term "eruption"@en.

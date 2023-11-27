@@ -1,0 +1,10 @@
+.upm
+*replit*
+.pythonlibs
+__pycache__
+files/SNAP-A-Box.ttl
+*.tsv
+*.csv
+.breakpoints
+
+
