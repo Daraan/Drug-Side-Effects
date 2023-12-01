@@ -59,3 +59,4 @@ if __name__ == "__main__":
         "Give a druglist (STITCH IDs) yourself, use spaces to separate: "
     ).split(" ")
     runquery(input("Write your query: "))
+# 
