@@ -1,0 +1,1408 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<http://bio2rdf.org/drugbank_vocabulary:Absorption> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:Class ;
+	rdfs:label "Absorption [drugbank_vocabulary:Absorption]"@en, "Absorption [drugbank_vocabulary:Absorption]" ;
+	dcterms:title "Absorption"@en ;
+	dcterms:identifier "drugbank_vocabulary:Absorption" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Absorption" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Absorption" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Affected-organism> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:Class ;
+	rdfs:label "Affected-organism [drugbank_vocabulary:Affected-organism]", "Affected-organism [drugbank_vocabulary:Affected-organism]"@en ;
+	dcterms:title "Affected-organism"@en ;
+	dcterms:identifier "drugbank_vocabulary:Affected-organism" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Affected-organism" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Affected-organism" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Bioavailability> a owl:Class, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "Bioavailability [drugbank_vocabulary:Bioavailability]", "Bioavailability [drugbank_vocabulary:Bioavailability]"@en ;
+	rdfs:subClassOf <http://bio2rdf.org/drugbank_vocabulary:Calculated-properties> ;
+	dcterms:title "Bioavailability"@en ;
+	dcterms:identifier "drugbank_vocabulary:Bioavailability" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Bioavailability" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Bioavailability" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Biotransformation> a owl:Class, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "Biotransformation [drugbank_vocabulary:Biotransformation]"@en, "Biotransformation [drugbank_vocabulary:Biotransformation]" ;
+	dcterms:title "Biotransformation"@en ;
+	dcterms:identifier "drugbank_vocabulary:Biotransformation" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Biotransformation" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Biotransformation" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Boiling-Point> a owl:Class, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "Boiling Point [drugbank_vocabulary:Boiling-Point]", "Boiling Point [drugbank_vocabulary:Boiling-Point]"@en ;
+	rdfs:subClassOf <http://bio2rdf.org/drugbank_vocabulary:Experimental-properties> ;
+	dcterms:title "Boiling Point"@en ;
+	dcterms:identifier "drugbank_vocabulary:Boiling-Point" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Boiling-Point" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Boiling-Point" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Brand> a owl:Class, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "Brand [drugbank_vocabulary:Brand]", "Brand [drugbank_vocabulary:Brand]"@en ;
+	dcterms:title "Brand"@en ;
+	dcterms:identifier "drugbank_vocabulary:Brand" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Brand" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Brand" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Caco2-Permeability> a owl:Class, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "caco2 Permeability [drugbank_vocabulary:Caco2-Permeability]", "caco2 Permeability [drugbank_vocabulary:Caco2-Permeability]"@en ;
+	rdfs:subClassOf <http://bio2rdf.org/drugbank_vocabulary:Experimental-properties> ;
+	dcterms:title "caco2 Permeability"@en ;
+	dcterms:identifier "drugbank_vocabulary:Caco2-Permeability" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Caco2-Permeability" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Caco2-Permeability" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Carrier> a owl:Class, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "Carrier [drugbank_vocabulary:Carrier]"@en, "Carrier [drugbank_vocabulary:Carrier]" ;
+	dcterms:title "Carrier"@en ;
+	dcterms:identifier "drugbank_vocabulary:Carrier" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Carrier" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Carrier" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Carrier-Relation> a owl:Class, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "Carrier Relation [drugbank_vocabulary:Carrier-Relation]", "Carrier Relation [drugbank_vocabulary:Carrier-Relation]"@en ;
+	dcterms:title "Carrier Relation"@en ;
+	dcterms:identifier "drugbank_vocabulary:Carrier-Relation" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Carrier-Relation" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Carrier-Relation" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Category> a owl:Class, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "Category [drugbank_vocabulary:Category]", "Category [drugbank_vocabulary:Category]"@en ;
+	dcterms:title "Category"@en ;
+	dcterms:identifier "drugbank_vocabulary:Category" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Category" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Category" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Clearance> a owl:Class, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "Clearance [drugbank_vocabulary:Clearance]"@en, "Clearance [drugbank_vocabulary:Clearance]" ;
+	dcterms:title "Clearance"@en ;
+	dcterms:identifier "drugbank_vocabulary:Clearance" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Clearance" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Clearance" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Drug> a owl:Class, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "Drug [drugbank_vocabulary:Drug]"@en, "Drug [drugbank_vocabulary:Drug]" ;
+	dcterms:title "Drug"@en ;
+	dcterms:identifier "drugbank_vocabulary:Drug" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Drug" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Drug" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Drug-Drug-Interaction> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:Class ;
+	rdfs:label "drug-drug interaction [drugbank_vocabulary:Drug-Drug-Interaction]"@en, "drug-drug interaction [drugbank_vocabulary:Drug-Drug-Interaction]" ;
+	dcterms:title "drug-drug interaction"@en ;
+	dcterms:identifier "drugbank_vocabulary:Drug-Drug-Interaction" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Drug-Drug-Interaction" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Drug-Drug-Interaction" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Enzyme> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:Class ;
+	rdfs:label "Enzyme [drugbank_vocabulary:Enzyme]"@en, "Enzyme [drugbank_vocabulary:Enzyme]" ;
+	dcterms:title "Enzyme"@en ;
+	dcterms:identifier "drugbank_vocabulary:Enzyme" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Enzyme" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Enzyme" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Enzyme-Relation> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:Class ;
+	rdfs:label "Enzyme Relation [drugbank_vocabulary:Enzyme-Relation]"@en, "Enzyme Relation [drugbank_vocabulary:Enzyme-Relation]" ;
+	dcterms:title "Enzyme Relation"@en ;
+	dcterms:identifier "drugbank_vocabulary:Enzyme-Relation" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Enzyme-Relation" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Enzyme-Relation" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Food-interaction> a owl:Class, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "food-interaction [drugbank_vocabulary:Food-interaction]", "food-interaction [drugbank_vocabulary:Food-interaction]"@en ;
+	dcterms:title "food-interaction"@en ;
+	dcterms:identifier "drugbank_vocabulary:Food-interaction" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Food-interaction" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Food-interaction" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Ghose-Filter> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:Class ;
+	rdfs:label "Ghose Filter [drugbank_vocabulary:Ghose-Filter]", "Ghose Filter [drugbank_vocabulary:Ghose-Filter]"@en ;
+	rdfs:subClassOf <http://bio2rdf.org/drugbank_vocabulary:Calculated-properties> ;
+	dcterms:title "Ghose Filter"@en ;
+	dcterms:identifier "drugbank_vocabulary:Ghose-Filter" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Ghose-Filter" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Ghose-Filter" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Group> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:Class ;
+	rdfs:label "Group [drugbank_vocabulary:Group]", "Group [drugbank_vocabulary:Group]"@en ;
+	dcterms:title "Group"@en ;
+	dcterms:identifier "drugbank_vocabulary:Group" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Group" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Group" .
+
+<http://bio2rdf.org/drugbank_vocabulary:H-Bond-Acceptor-Count> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:Class ;
+	rdfs:label "H Bond Acceptor Count [drugbank_vocabulary:H-Bond-Acceptor-Count]"@en, "H Bond Acceptor Count [drugbank_vocabulary:H-Bond-Acceptor-Count]" ;
+	rdfs:subClassOf <http://bio2rdf.org/drugbank_vocabulary:Calculated-properties> ;
+	dcterms:title "H Bond Acceptor Count"@en ;
+	dcterms:identifier "drugbank_vocabulary:H-Bond-Acceptor-Count" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "H-Bond-Acceptor-Count" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:H-Bond-Acceptor-Count" .
+
+<http://bio2rdf.org/drugbank_vocabulary:H-Bond-Donor-Count> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:Class ;
+	rdfs:label "H Bond Donor Count [drugbank_vocabulary:H-Bond-Donor-Count]"@en, "H Bond Donor Count [drugbank_vocabulary:H-Bond-Donor-Count]" ;
+	rdfs:subClassOf <http://bio2rdf.org/drugbank_vocabulary:Calculated-properties> ;
+	dcterms:title "H Bond Donor Count"@en ;
+	dcterms:identifier "drugbank_vocabulary:H-Bond-Donor-Count" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "H-Bond-Donor-Count" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:H-Bond-Donor-Count" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Half-life> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:Class ;
+	rdfs:label "Half life [drugbank_vocabulary:Half-life]"@en, "Half life [drugbank_vocabulary:Half-life]" ;
+	dcterms:title "Half life"@en ;
+	dcterms:identifier "drugbank_vocabulary:Half-life" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Half-life" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Half-life" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Hydrophobicity> a owl:Class, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "Hydrophobicity [drugbank_vocabulary:Hydrophobicity]", "Hydrophobicity [drugbank_vocabulary:Hydrophobicity]"@en ;
+	rdfs:subClassOf <http://bio2rdf.org/drugbank_vocabulary:Experimental-properties> ;
+	dcterms:title "Hydrophobicity"@en ;
+	dcterms:identifier "drugbank_vocabulary:Hydrophobicity" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Hydrophobicity" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Hydrophobicity" .
+
+<http://bio2rdf.org/drugbank_vocabulary:IUPAC-Name> a owl:Class, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "IUPAC Name [drugbank_vocabulary:IUPAC-Name]"@en, "IUPAC Name [drugbank_vocabulary:IUPAC-Name]" ;
+	rdfs:subClassOf <http://bio2rdf.org/drugbank_vocabulary:Calculated-properties> ;
+	dcterms:title "IUPAC Name"@en ;
+	dcterms:identifier "drugbank_vocabulary:IUPAC-Name" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "IUPAC-Name" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:IUPAC-Name" .
+
+<http://bio2rdf.org/drugbank_vocabulary:InChI> a owl:Class, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "InChI [drugbank_vocabulary:InChI]"@en, "InChI [drugbank_vocabulary:InChI]" ;
+	rdfs:subClassOf <http://bio2rdf.org/drugbank_vocabulary:Calculated-properties> ;
+	dcterms:title "InChI"@en ;
+	dcterms:identifier "drugbank_vocabulary:InChI" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "InChI" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:InChI" .
+
+<http://bio2rdf.org/drugbank_vocabulary:InChIKey> a owl:Class, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "InChIKey [drugbank_vocabulary:InChIKey]"@en, "InChIKey [drugbank_vocabulary:InChIKey]" ;
+	rdfs:subClassOf <http://bio2rdf.org/drugbank_vocabulary:Calculated-properties> ;
+	dcterms:title "InChIKey"@en ;
+	dcterms:identifier "drugbank_vocabulary:InChIKey" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "InChIKey" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:InChIKey" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Indication> a owl:Class, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "Indication [drugbank_vocabulary:Indication]", "Indication [drugbank_vocabulary:Indication]"@en ;
+	dcterms:title "Indication"@en ;
+	dcterms:identifier "drugbank_vocabulary:Indication" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Indication" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Indication" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Isoelectric-Point> a owl:Class, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "Isoelectric Point [drugbank_vocabulary:Isoelectric-Point]"@en, "Isoelectric Point [drugbank_vocabulary:Isoelectric-Point]" ;
+	rdfs:subClassOf <http://bio2rdf.org/drugbank_vocabulary:Experimental-properties> ;
+	dcterms:title "Isoelectric Point"@en ;
+	dcterms:identifier "drugbank_vocabulary:Isoelectric-Point" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Isoelectric-Point" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Isoelectric-Point" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Kingdom> a owl:Class, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "kingdom [drugbank_vocabulary:Kingdom]"@en, "kingdom [drugbank_vocabulary:Kingdom]" ;
+	dcterms:title "kingdom"@en ;
+	dcterms:identifier "drugbank_vocabulary:Kingdom" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Kingdom" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Kingdom" .
+
+<http://bio2rdf.org/drugbank_vocabulary:LogP> a owl:Class, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "logP [drugbank_vocabulary:LogP]"@en, "logP [drugbank_vocabulary:LogP]" ;
+	rdfs:subClassOf <http://bio2rdf.org/drugbank_vocabulary:Experimental-properties> ;
+	dcterms:title "logP"@en ;
+	dcterms:identifier "drugbank_vocabulary:LogP" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "LogP" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:LogP" .
+
+<http://bio2rdf.org/drugbank_vocabulary:LogS> a owl:Class, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "logS [drugbank_vocabulary:LogS]", "logS [drugbank_vocabulary:LogS]"@en ;
+	rdfs:subClassOf <http://bio2rdf.org/drugbank_vocabulary:Calculated-properties> ;
+	dcterms:title "logS"@en ;
+	dcterms:identifier "drugbank_vocabulary:LogS" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "LogS" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:LogS" .
+
+<http://bio2rdf.org/drugbank_vocabulary:MDDR-Like-Rule> a owl:Class, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "MDDR-Like Rule [drugbank_vocabulary:MDDR-Like-Rule]"@en, "MDDR-Like Rule [drugbank_vocabulary:MDDR-Like-Rule]" ;
+	rdfs:subClassOf <http://bio2rdf.org/drugbank_vocabulary:Calculated-properties> ;
+	dcterms:title "MDDR-Like Rule"@en ;
+	dcterms:identifier "drugbank_vocabulary:MDDR-Like-Rule" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "MDDR-Like-Rule" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:MDDR-Like-Rule" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Manufacturer> a owl:Class, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "manufacturer [drugbank_vocabulary:Manufacturer]"@en, "manufacturer [drugbank_vocabulary:Manufacturer]" ;
+	dcterms:title "manufacturer"@en ;
+	dcterms:identifier "drugbank_vocabulary:Manufacturer" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Manufacturer" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Manufacturer" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Mechanism-of-action> a owl:Class, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "Mechanism of action [drugbank_vocabulary:Mechanism-of-action]", "Mechanism of action [drugbank_vocabulary:Mechanism-of-action]"@en ;
+	dcterms:title "Mechanism of action"@en ;
+	dcterms:identifier "drugbank_vocabulary:Mechanism-of-action" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Mechanism-of-action" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Mechanism-of-action" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Melting-Point> a owl:Class, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "Melting Point [drugbank_vocabulary:Melting-Point]", "Melting Point [drugbank_vocabulary:Melting-Point]"@en ;
+	rdfs:subClassOf <http://bio2rdf.org/drugbank_vocabulary:Experimental-properties> ;
+	dcterms:title "Melting Point"@en ;
+	dcterms:identifier "drugbank_vocabulary:Melting-Point" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Melting-Point" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Melting-Point" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Mixture> a owl:Class, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "mixture [drugbank_vocabulary:Mixture]", "mixture [drugbank_vocabulary:Mixture]"@en ;
+	dcterms:title "mixture"@en ;
+	dcterms:identifier "drugbank_vocabulary:Mixture" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Mixture" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Mixture" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Molecular-Formula> a owl:Class, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "Molecular Formula [drugbank_vocabulary:Molecular-Formula]"@en, "Molecular Formula [drugbank_vocabulary:Molecular-Formula]" ;
+	rdfs:subClassOf <http://bio2rdf.org/drugbank_vocabulary:Experimental-properties> ;
+	dcterms:title "Molecular Formula"@en ;
+	dcterms:identifier "drugbank_vocabulary:Molecular-Formula" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Molecular-Formula" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Molecular-Formula" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Molecular-Weight> a owl:Class, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "Molecular Weight [drugbank_vocabulary:Molecular-Weight]"@en, "Molecular Weight [drugbank_vocabulary:Molecular-Weight]" ;
+	rdfs:subClassOf <http://bio2rdf.org/drugbank_vocabulary:Experimental-properties> ;
+	dcterms:title "Molecular Weight"@en ;
+	dcterms:identifier "drugbank_vocabulary:Molecular-Weight" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Molecular-Weight" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Molecular-Weight" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Monoisotopic-Weight> a owl:Class, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "Monoisotopic Weight [drugbank_vocabulary:Monoisotopic-Weight]", "Monoisotopic Weight [drugbank_vocabulary:Monoisotopic-Weight]"@en ;
+	rdfs:subClassOf <http://bio2rdf.org/drugbank_vocabulary:Calculated-properties> ;
+	dcterms:title "Monoisotopic Weight"@en ;
+	dcterms:identifier "drugbank_vocabulary:Monoisotopic-Weight" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Monoisotopic-Weight" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Monoisotopic-Weight" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Number-of-Rings> a owl:Class, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "Number of Rings [drugbank_vocabulary:Number-of-Rings]", "Number of Rings [drugbank_vocabulary:Number-of-Rings]"@en ;
+	rdfs:subClassOf <http://bio2rdf.org/drugbank_vocabulary:Calculated-properties> ;
+	dcterms:title "Number of Rings"@en ;
+	dcterms:identifier "drugbank_vocabulary:Number-of-Rings" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Number-of-Rings" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Number-of-Rings" .
+
+<http://bio2rdf.org/drugbank_vocabulary:PKa> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:Class ;
+	rdfs:label "pKa [drugbank_vocabulary:PKa]"@en, "pKa [drugbank_vocabulary:PKa]" ;
+	rdfs:subClassOf <http://bio2rdf.org/drugbank_vocabulary:Experimental-properties> ;
+	dcterms:title "pKa"@en ;
+	dcterms:identifier "drugbank_vocabulary:PKa" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "PKa" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:PKa" .
+
+<http://bio2rdf.org/drugbank_vocabulary:PKa-(strongest-acidic)> a owl:Class, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "pKa (strongest acidic) [drugbank_vocabulary:PKa-(strongest-acidic)]", "pKa (strongest acidic) [drugbank_vocabulary:PKa-(strongest-acidic)]"@en ;
+	rdfs:subClassOf <http://bio2rdf.org/drugbank_vocabulary:Calculated-properties> ;
+	dcterms:title "pKa (strongest acidic)"@en ;
+	dcterms:identifier "drugbank_vocabulary:PKa-(strongest-acidic)" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "PKa-(strongest-acidic)" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:PKa-(strongest-acidic)" .
+
+<http://bio2rdf.org/drugbank_vocabulary:PKa-(strongest-basic)> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:Class ;
+	rdfs:label "pKa (strongest basic) [drugbank_vocabulary:PKa-(strongest-basic)]", "pKa (strongest basic) [drugbank_vocabulary:PKa-(strongest-basic)]"@en ;
+	rdfs:subClassOf <http://bio2rdf.org/drugbank_vocabulary:Calculated-properties> ;
+	dcterms:title "pKa (strongest basic)"@en ;
+	dcterms:identifier "drugbank_vocabulary:PKa-(strongest-basic)" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "PKa-(strongest-basic)" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:PKa-(strongest-basic)" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Patent> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:Class ;
+	rdfs:label "patent [drugbank_vocabulary:Patent]", "patent [drugbank_vocabulary:Patent]"@en ;
+	dcterms:title "patent"@en ;
+	dcterms:identifier "drugbank_vocabulary:Patent" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Patent" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Patent" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Pharmaceutical> a owl:Class, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "pharmaceutical [drugbank_vocabulary:Pharmaceutical]"@en, "pharmaceutical [drugbank_vocabulary:Pharmaceutical]" ;
+	dcterms:title "pharmaceutical"@en ;
+	dcterms:identifier "drugbank_vocabulary:Pharmaceutical" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Pharmaceutical" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Pharmaceutical" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Pharmacology> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:Class ;
+	rdfs:label "Pharmacology [drugbank_vocabulary:Pharmacology]"@en, "Pharmacology [drugbank_vocabulary:Pharmacology]" ;
+	dcterms:title "Pharmacology"@en ;
+	dcterms:identifier "drugbank_vocabulary:Pharmacology" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Pharmacology" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Pharmacology" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Physiological-Charge> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:Class ;
+	rdfs:label "Physiological Charge [drugbank_vocabulary:Physiological-Charge]", "Physiological Charge [drugbank_vocabulary:Physiological-Charge]"@en ;
+	rdfs:subClassOf <http://bio2rdf.org/drugbank_vocabulary:Calculated-properties> ;
+	dcterms:title "Physiological Charge"@en ;
+	dcterms:identifier "drugbank_vocabulary:Physiological-Charge" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Physiological-Charge" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Physiological-Charge" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Polar-Surface-Area-(PSA)> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:Class ;
+	rdfs:label "Polar Surface Area (PSA) [drugbank_vocabulary:Polar-Surface-Area-(PSA)]"@en, "Polar Surface Area (PSA) [drugbank_vocabulary:Polar-Surface-Area-(PSA)]" ;
+	rdfs:subClassOf <http://bio2rdf.org/drugbank_vocabulary:Calculated-properties> ;
+	dcterms:title "Polar Surface Area (PSA)"@en ;
+	dcterms:identifier "drugbank_vocabulary:Polar-Surface-Area-(PSA)" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Polar-Surface-Area-(PSA)" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Polar-Surface-Area-(PSA)" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Polarizability> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:Class ;
+	rdfs:label "Polarizability [drugbank_vocabulary:Polarizability]"@en, "Polarizability [drugbank_vocabulary:Polarizability]" ;
+	rdfs:subClassOf <http://bio2rdf.org/drugbank_vocabulary:Calculated-properties> ;
+	dcterms:title "Polarizability"@en ;
+	dcterms:identifier "drugbank_vocabulary:Polarizability" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Polarizability" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Polarizability" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Protein-binding> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:Class ;
+	rdfs:label "Protein binding [drugbank_vocabulary:Protein-binding]", "Protein binding [drugbank_vocabulary:Protein-binding]"@en ;
+	dcterms:title "Protein binding"@en ;
+	dcterms:identifier "drugbank_vocabulary:Protein-binding" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Protein-binding" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Protein-binding" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Refractivity> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:Class ;
+	rdfs:label "Refractivity [drugbank_vocabulary:Refractivity]", "Refractivity [drugbank_vocabulary:Refractivity]"@en ;
+	rdfs:subClassOf <http://bio2rdf.org/drugbank_vocabulary:Calculated-properties> ;
+	dcterms:title "Refractivity"@en ;
+	dcterms:identifier "drugbank_vocabulary:Refractivity" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Refractivity" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Refractivity" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Resource> a rdfs:Resource ;
+	rdfs:label "drugbank resource [drugbank_vocabulary:Resource]", "drugbank resource [drugbank_vocabulary:Resource]" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Rotatable-Bond-Count> a owl:Class, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "Rotatable Bond Count [drugbank_vocabulary:Rotatable-Bond-Count]", "Rotatable Bond Count [drugbank_vocabulary:Rotatable-Bond-Count]"@en ;
+	rdfs:subClassOf <http://bio2rdf.org/drugbank_vocabulary:Calculated-properties> ;
+	dcterms:title "Rotatable Bond Count"@en ;
+	dcterms:identifier "drugbank_vocabulary:Rotatable-Bond-Count" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Rotatable-Bond-Count" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Rotatable-Bond-Count" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Route-of-elimination> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:Class ;
+	rdfs:label "Route of elimination [drugbank_vocabulary:Route-of-elimination]"@en, "Route of elimination [drugbank_vocabulary:Route-of-elimination]" ;
+	dcterms:title "Route of elimination"@en ;
+	dcterms:identifier "drugbank_vocabulary:Route-of-elimination" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Route-of-elimination" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Route-of-elimination" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Rule-of-Five> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:Class ;
+	rdfs:label "Rule of Five [drugbank_vocabulary:Rule-of-Five]"@en, "Rule of Five [drugbank_vocabulary:Rule-of-Five]" ;
+	rdfs:subClassOf <http://bio2rdf.org/drugbank_vocabulary:Calculated-properties> ;
+	dcterms:title "Rule of Five"@en ;
+	dcterms:identifier "drugbank_vocabulary:Rule-of-Five" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Rule-of-Five" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Rule-of-Five" .
+
+<http://bio2rdf.org/drugbank_vocabulary:SMILES> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:Class ;
+	rdfs:label "SMILES [drugbank_vocabulary:SMILES]", "SMILES [drugbank_vocabulary:SMILES]"@en ;
+	rdfs:subClassOf <http://bio2rdf.org/drugbank_vocabulary:Calculated-properties> ;
+	dcterms:title "SMILES"@en ;
+	dcterms:identifier "drugbank_vocabulary:SMILES" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "SMILES" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:SMILES" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Salt> a owl:Class, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "salt [drugbank_vocabulary:Salt]", "salt [drugbank_vocabulary:Salt]"@en ;
+	dcterms:title "salt"@en ;
+	dcterms:identifier "drugbank_vocabulary:Salt" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Salt" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Salt" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Source> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:Class ;
+	rdfs:label "Source [drugbank_vocabulary:Source]", "Source [drugbank_vocabulary:Source]"@en ;
+	dcterms:title "Source"@en ;
+	dcterms:identifier "drugbank_vocabulary:Source" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Source" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Source" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Substructures> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:Class ;
+	rdfs:label "substructures [drugbank_vocabulary:Substructures]", "substructures [drugbank_vocabulary:Substructures]"@en ;
+	dcterms:title "substructures"@en ;
+	dcterms:identifier "drugbank_vocabulary:Substructures" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Substructures" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Substructures" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Synonym> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:Class ;
+	rdfs:label "Synonym [drugbank_vocabulary:Synonym]"@en, "Synonym [drugbank_vocabulary:Synonym]" ;
+	dcterms:title "Synonym"@en ;
+	dcterms:identifier "drugbank_vocabulary:Synonym" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Synonym" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Synonym" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Target> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:Class ;
+	rdfs:label "Target [drugbank_vocabulary:Target]", "Target [drugbank_vocabulary:Target]"@en ;
+	dcterms:title "Target"@en ;
+	dcterms:identifier "drugbank_vocabulary:Target" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Target" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Target" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Target-Relation> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:Class ;
+	rdfs:label "Target Relation [drugbank_vocabulary:Target-Relation]", "Target Relation [drugbank_vocabulary:Target-Relation]"@en ;
+	dcterms:title "Target Relation"@en ;
+	dcterms:identifier "drugbank_vocabulary:Target-Relation" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Target-Relation" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Target-Relation" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Toxicity> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:Class ;
+	rdfs:label "Toxicity [drugbank_vocabulary:Toxicity]"@en, "Toxicity [drugbank_vocabulary:Toxicity]" ;
+	dcterms:title "Toxicity"@en ;
+	dcterms:identifier "drugbank_vocabulary:Toxicity" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Toxicity" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Toxicity" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Traditional-IUPAC-Name> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:Class ;
+	rdfs:label "Traditional IUPAC Name [drugbank_vocabulary:Traditional-IUPAC-Name]", "Traditional IUPAC Name [drugbank_vocabulary:Traditional-IUPAC-Name]"@en ;
+	rdfs:subClassOf <http://bio2rdf.org/drugbank_vocabulary:Calculated-properties> ;
+	dcterms:title "Traditional IUPAC Name"@en ;
+	dcterms:identifier "drugbank_vocabulary:Traditional-IUPAC-Name" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Traditional-IUPAC-Name" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Traditional-IUPAC-Name" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Transporter> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:Class ;
+	rdfs:label "Transporter [drugbank_vocabulary:Transporter]"@en, "Transporter [drugbank_vocabulary:Transporter]" ;
+	dcterms:title "Transporter"@en ;
+	dcterms:identifier "drugbank_vocabulary:Transporter" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Transporter" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Transporter" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Transporter-Relation> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:Class ;
+	rdfs:label "Transporter Relation [drugbank_vocabulary:Transporter-Relation]", "Transporter Relation [drugbank_vocabulary:Transporter-Relation]"@en ;
+	dcterms:title "Transporter Relation"@en ;
+	dcterms:identifier "drugbank_vocabulary:Transporter-Relation" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Transporter-Relation" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Transporter-Relation" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Type> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:Class ;
+	rdfs:label "Type [drugbank_vocabulary:Type]", "Type [drugbank_vocabulary:Type]"@en ;
+	dcterms:title "Type"@en ;
+	dcterms:identifier "drugbank_vocabulary:Type" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Type" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Type" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Unit> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:Class ;
+	rdfs:label "unit [drugbank_vocabulary:Unit]"@en, "unit [drugbank_vocabulary:Unit]" ;
+	dcterms:title "unit"@en ;
+	dcterms:identifier "drugbank_vocabulary:Unit" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Unit" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Unit" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Volume-of-distribution> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:Class ;
+	rdfs:label "Volume of distribution [drugbank_vocabulary:Volume-of-distribution]", "Volume of distribution [drugbank_vocabulary:Volume-of-distribution]"@en ;
+	dcterms:title "Volume of distribution"@en ;
+	dcterms:identifier "drugbank_vocabulary:Volume-of-distribution" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Volume-of-distribution" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Volume-of-distribution" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Water-Solubility> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:Class ;
+	rdfs:label "Water Solubility [drugbank_vocabulary:Water-Solubility]"@en, "Water Solubility [drugbank_vocabulary:Water-Solubility]" ;
+	rdfs:subClassOf <http://bio2rdf.org/drugbank_vocabulary:Experimental-properties> ;
+	dcterms:title "Water Solubility"@en ;
+	dcterms:identifier "drugbank_vocabulary:Water-Solubility" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Water-Solubility" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Water-Solubility" .
+
+<http://bio2rdf.org/drugbank_vocabulary:absorption> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "absorption [drugbank_vocabulary:absorption]"@en, "absorption [drugbank_vocabulary:absorption]" ;
+	dcterms:title "absorption"@en ;
+	dcterms:identifier "drugbank_vocabulary:absorption" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "absorption" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:absorption" .
+
+<http://bio2rdf.org/drugbank_vocabulary:action> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "action [drugbank_vocabulary:action]"@en, "action [drugbank_vocabulary:action]" ;
+	dcterms:title "action"@en ;
+	dcterms:identifier "drugbank_vocabulary:action" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "action" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:action" .
+
+<http://bio2rdf.org/drugbank_vocabulary:affected-organism> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "affected organism [drugbank_vocabulary:affected-organism]"@en, "affected organism [drugbank_vocabulary:affected-organism]" ;
+	dcterms:title "affected organism"@en ;
+	dcterms:identifier "drugbank_vocabulary:affected-organism" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "affected-organism" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:affected-organism" .
+
+<http://bio2rdf.org/drugbank_vocabulary:approved> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:DatatypeProperty ;
+	rdfs:label "approved [drugbank_vocabulary:approved]"@en, "approved [drugbank_vocabulary:approved]" ;
+	dcterms:title "approved"@en ;
+	dcterms:identifier "drugbank_vocabulary:approved" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "approved" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:approved" .
+
+<http://bio2rdf.org/drugbank_vocabulary:biotransformation> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "biotransformation [drugbank_vocabulary:biotransformation]", "biotransformation [drugbank_vocabulary:biotransformation]"@en ;
+	dcterms:title "biotransformation"@en ;
+	dcterms:identifier "drugbank_vocabulary:biotransformation" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "biotransformation" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:biotransformation" .
+
+<http://bio2rdf.org/drugbank_vocabulary:brand> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "brand [drugbank_vocabulary:brand]", "brand [drugbank_vocabulary:brand]"@en ;
+	dcterms:title "brand"@en ;
+	dcterms:identifier "drugbank_vocabulary:brand" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "brand" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:brand" .
+
+<http://bio2rdf.org/drugbank_vocabulary:calculated-properties> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "calculated properties [drugbank_vocabulary:calculated-properties]", "calculated properties [drugbank_vocabulary:calculated-properties]"@en ;
+	dcterms:title "calculated properties"@en ;
+	dcterms:identifier "drugbank_vocabulary:calculated-properties" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "calculated-properties" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:calculated-properties" .
+
+<http://bio2rdf.org/drugbank_vocabulary:carrier> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "carrier [drugbank_vocabulary:carrier]"@en, "carrier [drugbank_vocabulary:carrier]" ;
+	dcterms:title "carrier"@en ;
+	dcterms:identifier "drugbank_vocabulary:carrier" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "carrier" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:carrier" .
+
+<http://bio2rdf.org/drugbank_vocabulary:category> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "category [drugbank_vocabulary:category]"@en, "category [drugbank_vocabulary:category]" ;
+	dcterms:title "category"@en ;
+	dcterms:identifier "drugbank_vocabulary:category" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "category" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:category" .
+
+<http://bio2rdf.org/drugbank_vocabulary:cellular-location> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:DatatypeProperty ;
+	rdfs:label "cellular location [drugbank_vocabulary:cellular-location]", "cellular location [drugbank_vocabulary:cellular-location]"@en ;
+	dcterms:title "cellular location"@en ;
+	dcterms:identifier "drugbank_vocabulary:cellular-location" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "cellular-location" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:cellular-location" .
+
+<http://bio2rdf.org/drugbank_vocabulary:clearance> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "clearance [drugbank_vocabulary:clearance]", "clearance [drugbank_vocabulary:clearance]"@en ;
+	dcterms:title "clearance"@en ;
+	dcterms:identifier "drugbank_vocabulary:clearance" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "clearance" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:clearance" .
+
+<http://bio2rdf.org/drugbank_vocabulary:country> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "country [drugbank_vocabulary:country]"@en, "country [drugbank_vocabulary:country]" ;
+	dcterms:title "country"@en ;
+	dcterms:identifier "drugbank_vocabulary:country" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "country" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:country" .
+
+<http://bio2rdf.org/drugbank_vocabulary:ddi-interactor-in> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "ddi interactor in [drugbank_vocabulary:ddi-interactor-in]"@en, "ddi interactor in [drugbank_vocabulary:ddi-interactor-in]" ;
+	dcterms:title "ddi interactor in"@en ;
+	dcterms:identifier "drugbank_vocabulary:ddi-interactor-in" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "ddi-interactor-in" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:ddi-interactor-in" .
+
+<http://bio2rdf.org/drugbank_vocabulary:dosage> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "dosage [drugbank_vocabulary:dosage]", "dosage [drugbank_vocabulary:dosage]"@en ;
+	dcterms:title "dosage"@en ;
+	dcterms:identifier "drugbank_vocabulary:dosage" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "dosage" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:dosage" .
+
+<http://bio2rdf.org/drugbank_vocabulary:drug> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "drug [drugbank_vocabulary:drug]", "drug [drugbank_vocabulary:drug]"@en ;
+	dcterms:title "drug"@en ;
+	dcterms:identifier "drugbank_vocabulary:drug" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "drug" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:drug" .
+
+<http://bio2rdf.org/drugbank_vocabulary:enzyme> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "enzyme [drugbank_vocabulary:enzyme]", "enzyme [drugbank_vocabulary:enzyme]"@en ;
+	dcterms:title "enzyme"@en ;
+	dcterms:identifier "drugbank_vocabulary:enzyme" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "enzyme" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:enzyme" .
+
+<http://bio2rdf.org/drugbank_vocabulary:experimental-properties> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "experimental properties [drugbank_vocabulary:experimental-properties]"@en, "experimental properties [drugbank_vocabulary:experimental-properties]" ;
+	dcterms:title "experimental properties"@en ;
+	dcterms:identifier "drugbank_vocabulary:experimental-properties" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "experimental-properties" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:experimental-properties" .
+
+<http://bio2rdf.org/drugbank_vocabulary:expires> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:DatatypeProperty ;
+	rdfs:label "expires [drugbank_vocabulary:expires]", "expires [drugbank_vocabulary:expires]"@en ;
+	dcterms:title "expires"@en ;
+	dcterms:identifier "drugbank_vocabulary:expires" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "expires" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:expires" .
+
+<http://bio2rdf.org/drugbank_vocabulary:food-interaction> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "food interaction [drugbank_vocabulary:food-interaction]"@en, "food interaction [drugbank_vocabulary:food-interaction]" ;
+	dcterms:title "food interaction"@en ;
+	dcterms:identifier "drugbank_vocabulary:food-interaction" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "food-interaction" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:food-interaction" .
+
+<http://bio2rdf.org/drugbank_vocabulary:form> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "form [drugbank_vocabulary:form]", "form [drugbank_vocabulary:form]"@en ;
+	dcterms:title "form"@en ;
+	dcterms:identifier "drugbank_vocabulary:form" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "form" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:form" .
+
+<http://bio2rdf.org/drugbank_vocabulary:gene-name> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:DatatypeProperty ;
+	rdfs:label "gene name [drugbank_vocabulary:gene-name]"@en, "gene name [drugbank_vocabulary:gene-name]" ;
+	dcterms:title "gene name"@en ;
+	dcterms:identifier "drugbank_vocabulary:gene-name" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "gene-name" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:gene-name" .
+
+<http://bio2rdf.org/drugbank_vocabulary:general-function> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:DatatypeProperty ;
+	rdfs:label "general function [drugbank_vocabulary:general-function]", "general function [drugbank_vocabulary:general-function]"@en ;
+	dcterms:title "general function"@en ;
+	dcterms:identifier "drugbank_vocabulary:general-function" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "general-function" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:general-function" .
+
+<http://bio2rdf.org/drugbank_vocabulary:group> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "group [drugbank_vocabulary:group]"@en, "group [drugbank_vocabulary:group]" ;
+	dcterms:title "group"@en ;
+	dcterms:identifier "drugbank_vocabulary:group" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "group" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:group" .
+
+<http://bio2rdf.org/drugbank_vocabulary:half-life> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "half life [drugbank_vocabulary:half-life]"@en, "half life [drugbank_vocabulary:half-life]" ;
+	dcterms:title "half life"@en ;
+	dcterms:identifier "drugbank_vocabulary:half-life" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "half-life" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:half-life" .
+
+<http://bio2rdf.org/drugbank_vocabulary:id> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:DatatypeProperty ;
+	rdfs:label "id [drugbank_vocabulary:id]", "id [drugbank_vocabulary:id]"@en ;
+	dcterms:title "id"@en ;
+	dcterms:identifier "drugbank_vocabulary:id" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "id" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:id" .
+
+<http://bio2rdf.org/drugbank_vocabulary:indication> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "indication [drugbank_vocabulary:indication]"@en, "indication [drugbank_vocabulary:indication]" ;
+	dcterms:title "indication"@en ;
+	dcterms:identifier "drugbank_vocabulary:indication" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "indication" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:indication" .
+
+<http://bio2rdf.org/drugbank_vocabulary:ingredient> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "ingredient [drugbank_vocabulary:ingredient]"@en, "ingredient [drugbank_vocabulary:ingredient]" ;
+	dcterms:title "ingredient"@en ;
+	dcterms:identifier "drugbank_vocabulary:ingredient" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "ingredient" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:ingredient" .
+
+<http://bio2rdf.org/drugbank_vocabulary:ingredients> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:DatatypeProperty ;
+	rdfs:label "ingredients [drugbank_vocabulary:ingredients]", "ingredients [drugbank_vocabulary:ingredients]"@en ;
+	dcterms:title "ingredients"@en ;
+	dcterms:identifier "drugbank_vocabulary:ingredients" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "ingredients" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:ingredients" .
+
+<http://bio2rdf.org/drugbank_vocabulary:kingdom> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "kingdom [drugbank_vocabulary:kingdom]"@en, "kingdom [drugbank_vocabulary:kingdom]" ;
+	dcterms:title "kingdom"@en ;
+	dcterms:identifier "drugbank_vocabulary:kingdom" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "kingdom" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:kingdom" .
+
+<http://bio2rdf.org/drugbank_vocabulary:known-action> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:DatatypeProperty ;
+	rdfs:label "known action [drugbank_vocabulary:known-action]"@en, "known action [drugbank_vocabulary:known-action]" ;
+	dcterms:title "known action"@en ;
+	dcterms:identifier "drugbank_vocabulary:known-action" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "known-action" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:known-action" .
+
+<http://bio2rdf.org/drugbank_vocabulary:locus> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:DatatypeProperty ;
+	rdfs:label "locus [drugbank_vocabulary:locus]", "locus [drugbank_vocabulary:locus]"@en ;
+	dcterms:title "locus"@en ;
+	dcterms:identifier "drugbank_vocabulary:locus" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "locus" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:locus" .
+
+<http://bio2rdf.org/drugbank_vocabulary:manufacturer> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "manufacturer [drugbank_vocabulary:manufacturer]"@en, "manufacturer [drugbank_vocabulary:manufacturer]" ;
+	dcterms:title "manufacturer"@en ;
+	dcterms:identifier "drugbank_vocabulary:manufacturer" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "manufacturer" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:manufacturer" .
+
+<http://bio2rdf.org/drugbank_vocabulary:mechanism-of-action> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "mechanism of action [drugbank_vocabulary:mechanism-of-action]", "mechanism of action [drugbank_vocabulary:mechanism-of-action]"@en ;
+	dcterms:title "mechanism of action"@en ;
+	dcterms:identifier "drugbank_vocabulary:mechanism-of-action" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "mechanism-of-action" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:mechanism-of-action" .
+
+<http://bio2rdf.org/drugbank_vocabulary:mixture> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "mixture [drugbank_vocabulary:mixture]", "mixture [drugbank_vocabulary:mixture]"@en ;
+	dcterms:title "mixture"@en ;
+	dcterms:identifier "drugbank_vocabulary:mixture" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "mixture" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:mixture" .
+
+<http://bio2rdf.org/drugbank_vocabulary:molecular-weight> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:DatatypeProperty ;
+	rdfs:label "molecular weight [drugbank_vocabulary:molecular-weight]", "molecular weight [drugbank_vocabulary:molecular-weight]"@en ;
+	dcterms:title "molecular weight"@en ;
+	dcterms:identifier "drugbank_vocabulary:molecular-weight" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "molecular-weight" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:molecular-weight" .
+
+<http://bio2rdf.org/drugbank_vocabulary:name> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:DatatypeProperty ;
+	rdfs:label "name [drugbank_vocabulary:name]"@en, "name [drugbank_vocabulary:name]" ;
+	dcterms:title "name"@en ;
+	dcterms:identifier "drugbank_vocabulary:name" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "name" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:name" .
+
+<http://bio2rdf.org/drugbank_vocabulary:organism> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:DatatypeProperty ;
+	rdfs:label "organism [drugbank_vocabulary:organism]", "organism [drugbank_vocabulary:organism]"@en ;
+	dcterms:title "organism"@en ;
+	dcterms:identifier "drugbank_vocabulary:organism" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "organism" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:organism" .
+
+<http://bio2rdf.org/drugbank_vocabulary:packager> a owl:ObjectProperty, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "packager [drugbank_vocabulary:packager]"@en, "packager [drugbank_vocabulary:packager]" ;
+	dcterms:title "packager"@en ;
+	dcterms:identifier "drugbank_vocabulary:packager" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "packager" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:packager" .
+
+<http://bio2rdf.org/drugbank_vocabulary:patent> a owl:ObjectProperty, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "patent [drugbank_vocabulary:patent]", "patent [drugbank_vocabulary:patent]"@en ;
+	dcterms:title "patent"@en ;
+	dcterms:identifier "drugbank_vocabulary:patent" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "patent" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:patent" .
+
+<http://bio2rdf.org/drugbank_vocabulary:pharmacology> a owl:ObjectProperty, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "pharmacology [drugbank_vocabulary:pharmacology]", "pharmacology [drugbank_vocabulary:pharmacology]"@en ;
+	dcterms:title "pharmacology"@en ;
+	dcterms:identifier "drugbank_vocabulary:pharmacology" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "pharmacology" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:pharmacology" .
+
+<http://bio2rdf.org/drugbank_vocabulary:price> a owl:DatatypeProperty, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "price [drugbank_vocabulary:price]"@en, "price [drugbank_vocabulary:price]" ;
+	dcterms:title "price"@en ;
+	dcterms:identifier "drugbank_vocabulary:price" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "price" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:price" .
+
+<http://bio2rdf.org/drugbank_vocabulary:product> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "product [drugbank_vocabulary:product]", "product [drugbank_vocabulary:product]"@en ;
+	dcterms:title "product"@en ;
+	dcterms:identifier "drugbank_vocabulary:product" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "product" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:product" .
+
+<http://bio2rdf.org/drugbank_vocabulary:protein-binding> a owl:ObjectProperty, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "protein binding [drugbank_vocabulary:protein-binding]"@en, "protein binding [drugbank_vocabulary:protein-binding]" ;
+	dcterms:title "protein binding"@en ;
+	dcterms:identifier "drugbank_vocabulary:protein-binding" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "protein-binding" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:protein-binding" .
+
+<http://bio2rdf.org/drugbank_vocabulary:reference> a owl:ObjectProperty, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "reference [drugbank_vocabulary:reference]", "reference [drugbank_vocabulary:reference]"@en ;
+	dcterms:title "reference"@en ;
+	dcterms:identifier "drugbank_vocabulary:reference" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "reference" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:reference" .
+
+<http://bio2rdf.org/drugbank_vocabulary:route> a owl:ObjectProperty, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "route [drugbank_vocabulary:route]"@en, "route [drugbank_vocabulary:route]" ;
+	dcterms:title "route"@en ;
+	dcterms:identifier "drugbank_vocabulary:route" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "route" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:route" .
+
+<http://bio2rdf.org/drugbank_vocabulary:route-of-elimination> a owl:ObjectProperty, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "route of elimination [drugbank_vocabulary:route-of-elimination]", "route of elimination [drugbank_vocabulary:route-of-elimination]"@en ;
+	dcterms:title "route of elimination"@en ;
+	dcterms:identifier "drugbank_vocabulary:route-of-elimination" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "route-of-elimination" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:route-of-elimination" .
+
+<http://bio2rdf.org/drugbank_vocabulary:salt> a owl:ObjectProperty, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "salt [drugbank_vocabulary:salt]"@en, "salt [drugbank_vocabulary:salt]" ;
+	dcterms:title "salt"@en ;
+	dcterms:identifier "drugbank_vocabulary:salt" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "salt" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:salt" .
+
+<http://bio2rdf.org/drugbank_vocabulary:source> a owl:ObjectProperty, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "source [drugbank_vocabulary:source]"@en, "source [drugbank_vocabulary:source]" ;
+	dcterms:title "source"@en ;
+	dcterms:identifier "drugbank_vocabulary:source" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "source" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:source" .
+
+<http://bio2rdf.org/drugbank_vocabulary:specific-function> a owl:DatatypeProperty, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "specific function [drugbank_vocabulary:specific-function]"@en, "specific function [drugbank_vocabulary:specific-function]" ;
+	dcterms:title "specific function"@en ;
+	dcterms:identifier "drugbank_vocabulary:specific-function" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "specific-function" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:specific-function" .
+
+<http://bio2rdf.org/drugbank_vocabulary:substructure> a owl:ObjectProperty, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "substructure [drugbank_vocabulary:substructure]", "substructure [drugbank_vocabulary:substructure]"@en ;
+	dcterms:title "substructure"@en ;
+	dcterms:identifier "drugbank_vocabulary:substructure" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "substructure" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:substructure" .
+
+<http://bio2rdf.org/drugbank_vocabulary:synonym> a owl:ObjectProperty, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "synonym [drugbank_vocabulary:synonym]"@en, "synonym [drugbank_vocabulary:synonym]" ;
+	dcterms:title "synonym"@en ;
+	dcterms:identifier "drugbank_vocabulary:synonym" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "synonym" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:synonym" .
+
+<http://bio2rdf.org/drugbank_vocabulary:target> a owl:ObjectProperty, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "target [drugbank_vocabulary:target]"@en, "target [drugbank_vocabulary:target]" ;
+	dcterms:title "target"@en ;
+	dcterms:identifier "drugbank_vocabulary:target" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "target" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:target" .
+
+<http://bio2rdf.org/drugbank_vocabulary:theoretical-pi> a owl:DatatypeProperty, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "theoretical pi [drugbank_vocabulary:theoretical-pi]"@en, "theoretical pi [drugbank_vocabulary:theoretical-pi]" ;
+	dcterms:title "theoretical pi"@en ;
+	dcterms:identifier "drugbank_vocabulary:theoretical-pi" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "theoretical-pi" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:theoretical-pi" .
+
+<http://bio2rdf.org/drugbank_vocabulary:toxicity> a owl:ObjectProperty, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "toxicity [drugbank_vocabulary:toxicity]"@en, "toxicity [drugbank_vocabulary:toxicity]" ;
+	dcterms:title "toxicity"@en ;
+	dcterms:identifier "drugbank_vocabulary:toxicity" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "toxicity" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:toxicity" .
+
+<http://bio2rdf.org/drugbank_vocabulary:transmembrane-regions> a owl:DatatypeProperty, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "transmembrane regions [drugbank_vocabulary:transmembrane-regions]"@en, "transmembrane regions [drugbank_vocabulary:transmembrane-regions]" ;
+	dcterms:title "transmembrane regions"@en ;
+	dcterms:identifier "drugbank_vocabulary:transmembrane-regions" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "transmembrane-regions" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:transmembrane-regions" .
+
+<http://bio2rdf.org/drugbank_vocabulary:transporter> a owl:ObjectProperty, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "transporter [drugbank_vocabulary:transporter]"@en, "transporter [drugbank_vocabulary:transporter]" ;
+	dcterms:title "transporter"@en ;
+	dcterms:identifier "drugbank_vocabulary:transporter" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "transporter" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:transporter" .
+
+<http://bio2rdf.org/drugbank_vocabulary:type> a owl:ObjectProperty, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "type [drugbank_vocabulary:type]", "type [drugbank_vocabulary:type]"@en ;
+	dcterms:title "type"@en ;
+	dcterms:identifier "drugbank_vocabulary:type" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "type" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:type" .
+
+<http://bio2rdf.org/drugbank_vocabulary:value> a owl:DatatypeProperty, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "value [drugbank_vocabulary:value]", "value [drugbank_vocabulary:value]"@en ;
+	dcterms:title "value"@en ;
+	dcterms:identifier "drugbank_vocabulary:value" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "value" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:value" .
+
+<http://bio2rdf.org/drugbank_vocabulary:volume-of-distribution> a owl:ObjectProperty, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "volume of distribution [drugbank_vocabulary:volume-of-distribution]", "volume of distribution [drugbank_vocabulary:volume-of-distribution]"@en ;
+	dcterms:title "volume of distribution"@en ;
+	dcterms:identifier "drugbank_vocabulary:volume-of-distribution" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "volume-of-distribution" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:volume-of-distribution" .
+
+<http://bio2rdf.org/drugbank_vocabulary:x-ahfs> a owl:ObjectProperty, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "x ahfs [drugbank_vocabulary:x-ahfs]", "x ahfs [drugbank_vocabulary:x-ahfs]"@en ;
+	dcterms:title "x ahfs"@en ;
+	dcterms:identifier "drugbank_vocabulary:x-ahfs" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "x-ahfs" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:x-ahfs" .
+
+<http://bio2rdf.org/drugbank_vocabulary:x-atc> a owl:ObjectProperty, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "x atc [drugbank_vocabulary:x-atc]"@en, "x atc [drugbank_vocabulary:x-atc]" ;
+	dcterms:title "x atc"@en ;
+	dcterms:identifier "drugbank_vocabulary:x-atc" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "x-atc" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:x-atc" .
+
+<http://bio2rdf.org/drugbank_vocabulary:x-bindingdb> a owl:ObjectProperty, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "x bindingdb [drugbank_vocabulary:x-bindingdb]", "x bindingdb [drugbank_vocabulary:x-bindingdb]"@en ;
+	dcterms:title "x bindingdb"@en ;
+	dcterms:identifier "drugbank_vocabulary:x-bindingdb" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "x-bindingdb" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:x-bindingdb" .
+
+<http://bio2rdf.org/drugbank_vocabulary:x-chebi> a owl:ObjectProperty, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "x chebi [drugbank_vocabulary:x-chebi]"@en, "x chebi [drugbank_vocabulary:x-chebi]" ;
+	dcterms:title "x chebi"@en ;
+	dcterms:identifier "drugbank_vocabulary:x-chebi" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "x-chebi" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:x-chebi" .
+
+<http://bio2rdf.org/drugbank_vocabulary:x-chemspider> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "x chemspider [drugbank_vocabulary:x-chemspider]"@en, "x chemspider [drugbank_vocabulary:x-chemspider]" ;
+	dcterms:title "x chemspider"@en ;
+	dcterms:identifier "drugbank_vocabulary:x-chemspider" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "x-chemspider" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:x-chemspider" .
+
+<http://bio2rdf.org/drugbank_vocabulary:x-dpd> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "x dpd [drugbank_vocabulary:x-dpd]", "x dpd [drugbank_vocabulary:x-dpd]"@en ;
+	dcterms:title "x dpd"@en ;
+	dcterms:identifier "drugbank_vocabulary:x-dpd" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "x-dpd" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:x-dpd" .
+
+<http://bio2rdf.org/drugbank_vocabulary:x-genatlas> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "x genatlas [drugbank_vocabulary:x-genatlas]", "x genatlas [drugbank_vocabulary:x-genatlas]"@en ;
+	dcterms:title "x genatlas"@en ;
+	dcterms:identifier "drugbank_vocabulary:x-genatlas" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "x-genatlas" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:x-genatlas" .
+
+<http://bio2rdf.org/drugbank_vocabulary:x-genbank> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "x genbank [drugbank_vocabulary:x-genbank]"@en, "x genbank [drugbank_vocabulary:x-genbank]" ;
+	dcterms:title "x genbank"@en ;
+	dcterms:identifier "drugbank_vocabulary:x-genbank" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "x-genbank" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:x-genbank" .
+
+<http://bio2rdf.org/drugbank_vocabulary:x-genecards> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "x genecards [drugbank_vocabulary:x-genecards]", "x genecards [drugbank_vocabulary:x-genecards]"@en ;
+	dcterms:title "x genecards"@en ;
+	dcterms:identifier "drugbank_vocabulary:x-genecards" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "x-genecards" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:x-genecards" .
+
+<http://bio2rdf.org/drugbank_vocabulary:x-gi> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "x gi [drugbank_vocabulary:x-gi]"@en, "x gi [drugbank_vocabulary:x-gi]" ;
+	dcterms:title "x gi"@en ;
+	dcterms:identifier "drugbank_vocabulary:x-gi" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "x-gi" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:x-gi" .
+
+<http://bio2rdf.org/drugbank_vocabulary:x-gtp> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "x gtp [drugbank_vocabulary:x-gtp]", "x gtp [drugbank_vocabulary:x-gtp]"@en ;
+	dcterms:title "x gtp"@en ;
+	dcterms:identifier "drugbank_vocabulary:x-gtp" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "x-gtp" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:x-gtp" .
+
+<http://bio2rdf.org/drugbank_vocabulary:x-hgnc> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "x hgnc [drugbank_vocabulary:x-hgnc]", "x hgnc [drugbank_vocabulary:x-hgnc]"@en ;
+	dcterms:title "x hgnc"@en ;
+	dcterms:identifier "drugbank_vocabulary:x-hgnc" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "x-hgnc" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:x-hgnc" .
+
+<http://bio2rdf.org/drugbank_vocabulary:x-iuphar> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "x iuphar [drugbank_vocabulary:x-iuphar]"@en, "x iuphar [drugbank_vocabulary:x-iuphar]" ;
+	dcterms:title "x iuphar"@en ;
+	dcterms:identifier "drugbank_vocabulary:x-iuphar" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "x-iuphar" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:x-iuphar" .
+
+<http://bio2rdf.org/drugbank_vocabulary:x-kegg> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "x kegg [drugbank_vocabulary:x-kegg]", "x kegg [drugbank_vocabulary:x-kegg]"@en ;
+	dcterms:title "x kegg"@en ;
+	dcterms:identifier "drugbank_vocabulary:x-kegg" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "x-kegg" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:x-kegg" .
+
+<http://bio2rdf.org/drugbank_vocabulary:x-ndc> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "x ndc [drugbank_vocabulary:x-ndc]"@en, "x ndc [drugbank_vocabulary:x-ndc]" ;
+	dcterms:title "x ndc"@en ;
+	dcterms:identifier "drugbank_vocabulary:x-ndc" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "x-ndc" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:x-ndc" .
+
+<http://bio2rdf.org/drugbank_vocabulary:x-pdb> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "x pdb [drugbank_vocabulary:x-pdb]", "x pdb [drugbank_vocabulary:x-pdb]"@en ;
+	dcterms:title "x pdb"@en ;
+	dcterms:identifier "drugbank_vocabulary:x-pdb" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "x-pdb" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:x-pdb" .
+
+<http://bio2rdf.org/drugbank_vocabulary:x-pharmgkb> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "x pharmgkb [drugbank_vocabulary:x-pharmgkb]", "x pharmgkb [drugbank_vocabulary:x-pharmgkb]"@en ;
+	dcterms:title "x pharmgkb"@en ;
+	dcterms:identifier "drugbank_vocabulary:x-pharmgkb" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "x-pharmgkb" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:x-pharmgkb" .
+
+<http://bio2rdf.org/drugbank_vocabulary:x-pubchemcompound> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "x pubchemcompound [drugbank_vocabulary:x-pubchemcompound]"@en, "x pubchemcompound [drugbank_vocabulary:x-pubchemcompound]" ;
+	dcterms:title "x pubchemcompound"@en ;
+	dcterms:identifier "drugbank_vocabulary:x-pubchemcompound" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "x-pubchemcompound" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:x-pubchemcompound" .
+
+<http://bio2rdf.org/drugbank_vocabulary:x-pubchemsubstance> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "x pubchemsubstance [drugbank_vocabulary:x-pubchemsubstance]", "x pubchemsubstance [drugbank_vocabulary:x-pubchemsubstance]"@en ;
+	dcterms:title "x pubchemsubstance"@en ;
+	dcterms:identifier "drugbank_vocabulary:x-pubchemsubstance" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "x-pubchemsubstance" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:x-pubchemsubstance" .
+
+<http://bio2rdf.org/drugbank_vocabulary:x-uniprot> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "x uniprot [drugbank_vocabulary:x-uniprot]"@en, "x uniprot [drugbank_vocabulary:x-uniprot]" ;
+	dcterms:title "x uniprot"@en ;
+	dcterms:identifier "drugbank_vocabulary:x-uniprot" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "x-uniprot" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:x-uniprot" .
+
+<http://bio2rdf.org/drugbank_vocabulary:x-wikipedia> a <http://bio2rdf.org/drugbank_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "x wikipedia [drugbank_vocabulary:x-wikipedia]", "x wikipedia [drugbank_vocabulary:x-wikipedia]"@en ;
+	dcterms:title "x wikipedia"@en ;
+	dcterms:identifier "drugbank_vocabulary:x-wikipedia" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "x-wikipedia" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:x-wikipedia" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Carrier-relation> a owl:Class, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "Carrier relation [drugbank_vocabulary:Carrier-relation]", "Carrier relation [drugbank_vocabulary:Carrier-relation]"@en ;
+	dcterms:title "Carrier relation"@en ;
+	dcterms:identifier "drugbank_vocabulary:Carrier-relation" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Carrier-relation" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Carrier-relation" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Enzyme-relation> a owl:Class, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "Enzyme relation [drugbank_vocabulary:Enzyme-relation]", "Enzyme relation [drugbank_vocabulary:Enzyme-relation]"@en ;
+	dcterms:title "Enzyme relation"@en ;
+	dcterms:identifier "drugbank_vocabulary:Enzyme-relation" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Enzyme-relation" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Enzyme-relation" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Target-relation> a owl:Class, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "Target relation [drugbank_vocabulary:Target-relation]", "Target relation [drugbank_vocabulary:Target-relation]"@en ;
+	dcterms:title "Target relation"@en ;
+	dcterms:identifier "drugbank_vocabulary:Target-relation" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Target-relation" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Target-relation" .
+
+<http://bio2rdf.org/drugbank_vocabulary:Transporter-relation> a owl:Class, <http://bio2rdf.org/drugbank_vocabulary:Resource> ;
+	rdfs:label "Transporter relation [drugbank_vocabulary:Transporter-relation]", "Transporter relation [drugbank_vocabulary:Transporter-relation]"@en ;
+	dcterms:title "Transporter relation"@en ;
+	dcterms:identifier "drugbank_vocabulary:Transporter-relation" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/drugbank_resource:bio2rdf.dataset.drugbank.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Transporter-relation" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "drugbank_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/drugbank_vocabulary:Transporter-relation" .
+
+

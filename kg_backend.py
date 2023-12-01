@@ -36,7 +36,9 @@ class KnowledgeBase:
         # TODO: Add NamespaceManager !!!!
         self.graph: Graph = Graph()
         for source in sources:
+            print("parsing", source)
             self.parse(source, format="turtle")
+        print("done")
 
     def parse(self, s, *args, **kwargs):
         try:
