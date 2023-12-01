@@ -1,0 +1,11 @@
+@prefix : <http://example.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix db_voc: <http://bio2rdf.org/drugbank_vocabulary:> .
+@prefix db: <http://bio2rdf.org/drugbank:>.
+@prefix sider: <http://bio2rdf.org/sider_vocabulary:> .
+@prefix umls: <http://bio2rdf.org/umls:> .
+
