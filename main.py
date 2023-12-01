@@ -2,7 +2,7 @@ import argparse
 import pandas as pd
 import rdflib
 import kg_backend
-import IPython
+
 
 
 def run_server():
@@ -14,10 +14,10 @@ def prepare_kgproject(test=True):
     # Load the class
     global kb
     if test:
-        kb = kg_backend.KnowledgeBase("files/SEQT-Onthology.ttl",
-                                      "files/SNAP-A-Box_test.ttl")
+        kb = kg_backend.KnowledgeBase("files/SEQT-Onthology.ttl", "files/db_terms_bridge.ttl",
+                                      "files\SNAP-A-Box_test.ttl")
     else:
-        kb = kg_backend.KnowledgeBase("files/SEQT-Onthology.ttl",
+        kb = kg_backend.KnowledgeBase("files/SEQT-Onthology.ttl", "files/db_terms_bridge.ttl",
                                       "files/SNAP-A-Box.ttl")
     return kb
 
@@ -41,3 +41,4 @@ if __name__ == "__main__":
         "Give a druglist (STITCH IDs) yourself, use spaces to separate:"
     ).split(" ")
     runquery(input("Write your query: "))
+# 
