@@ -15,10 +15,14 @@ def prepare_kgproject(test=True):
     global kb
     if test:
         kb = kg_backend.KnowledgeBase("files/SEQT-Onthology.ttl", "files/db_terms_bridge.ttl",
-                                      "files\SNAP-A-Box_test.ttl")
+                                      "files/SNAP-A-Box_test.ttl")
     else:
+        import time
+        start = time.time()
         kb = kg_backend.KnowledgeBase("files/SEQT-Onthology.ttl", "files/db_terms_bridge.ttl",
-                                      "files/SNAP-A-Box.ttl")
+                                      "files/SNAP-A-Box-prefixed.ttl")
+        print("Loading took: ", time.time() - start)
+        
     return kb
 
 

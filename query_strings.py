@@ -170,3 +170,17 @@ SELECT ?side_effect_code ?side_effect_term ?side_effect_source WHERE
   }}
 }}
 """
+
+
+find_connected = PREFIXE + """
+     SELECT * 
+     WHERE {
+         ?db1 <> ?db2 .
+         ?db1 dcterms:title ?n1 .
+        ?db2 dcterms:title ?n2 .
+         ?s1 owl:sameAs ?db1 .
+         ?s2 owl:sameAs ?db2 .
+         ?s1 db_voc:ddi-interactor-in ?connector .
+         ?s2 db_voc:ddi-interactor-in ?connector .
+     }
+     """

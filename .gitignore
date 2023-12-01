@@ -3,9 +3,9 @@
 .pythonlibs
 __pycache__
 files/SNAP-A-Box.ttl
-*.tsv
-*.csv
+files/SNAP-A-Box-prefixed.ttl
 .breakpoints
 env/
+*.zip
 
 
