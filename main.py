@@ -2,6 +2,7 @@ import argparse
 import pandas as pd
 import rdflib
 import kg_backend
+import query_strings as qs
 
 
 
@@ -34,9 +35,19 @@ def runquery(query):
 
 
 if __name__ == "__main__":
-    kb = prepare_kgproject()
+    test = True
+    kb = prepare_kgproject(test=True)
     # or argparse instead of input
-    drugs = ["CID000002173", "CID000003345", "CID003062316"]
+    if test:
+        drugs = ["CID000002173", "CID000003345", "CID003062316"]
+    else:
+        # 'Acetylsalicylic acid': CID000002244
+        # Ibuprofen: CID000003672
+        # Paracetamol 'Acetaminophen': CID000001983
+        # 
+        # drugs =["CID000002244", "CID000003672", "CID000001983"] 
+        drugs =["CID000002244", "CID000003672", "CID000001983"] 
+
     print("Query drugs: ", *drugs)
     results = kb.side_effects_drug_list(*drugs)
     print("Side effects:")
