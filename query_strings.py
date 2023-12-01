@@ -6,6 +6,7 @@ DB_VOC = "db_voc"
 DB = "db"
 SIDER = "sider"
 
+
 # NOTE SPARQL no @ and no .
 PREFIXE = f"""
 prefix : <http://example.org/> 
@@ -173,7 +174,7 @@ SELECT ?side_effect_code ?side_effect_term ?side_effect_source WHERE
 
 
 find_connected = PREFIXE + """
-     SELECT * 
+     SELECT DISTINCT ?s1 ?s2 ?n1 ?n2 
      WHERE {
          ?db1 <> ?db2 .
          ?db1 dcterms:title ?n1 .
@@ -183,4 +184,66 @@ find_connected = PREFIXE + """
          ?s1 db_voc:ddi-interactor-in ?connector .
          ?s2 db_voc:ddi-interactor-in ?connector .
      }
+     LIMIT 10
      """
+
+_name_to_stitch = PREFIXE + f"""
+    SELECT ?stitch_id
+    WHERE {{{{
+        VALUES ?name {{{{ "{{name}}"@en }}}}
+        ?stitch_id owl:sameAs ?db_id .
+        ?db_id dcterms:title ?name .
+    }}}} 
+"""
+
+_names_to_stitch = PREFIXE + f"""
+    SELECT ?stitch_id
+    WHERE {{{{
+        VALUES ?name {{{{  {{name_list}} }}}}
+        ?stitch_id owl:sameAs ?db_id .
+        ?db_id dcterms:title ?name .
+    }}}} 
+"""
+
+
+def name_to_stitch(name):
+    return _name_to_stitch.format(name=name)
+
+def names_to_stitch(*names):
+    return _names_to_stitch.format(name_list=" ".join('"'+n+'"@en' for n in names))
+
+_string_drug_side_effects_with_interactions_from_names = PREFIXE + f"""
+SELECT * WHERE
+{{{{
+    VALUES ?name {{{{  {{name_list}} }}}}
+    ?stitch_id owl:sameAs ?db_id .
+    ?db_id dcterms:title ?name .
+
+    {{{{
+        SELECT ?side_effect_source ?side_effect_code ?side_effect_term
+        WHERE {{{{
+            BIND (?stitch_id AS ?side_effect_source)
+            ?stitch_id {SIDER}:side-effect ?side_effect_code .
+            ?side_effect_code {SIDER}:preferred-term ?side_effect_term .
+        }}}}
+    }}}}
+    UNION
+    {{{{
+        SELECT ?side_effect_source ?side_effect_code ?side_effect_term
+        WHERE {{{{
+            VALUES ?id2 {{{{ ?stitch_id  }}}}
+            ?id2 <> ?stitch_id
+            ?stitch_id {DB_VOC}:ddi-interactor-in ?side_effect_source .
+            ?id2 {DB_VOC}:ddi-interactor-in ?side_effect_source .
+            
+            ?side_effect_source {SIDER}:side-effect ?side_effect_code .
+            ?side_effect_code {SIDER}:preferred-term ?side_effect_term .
+        }}}}
+    }}}}
+}}}}
+"""
+
+def all_from_names(*names):
+    return _string_drug_side_effects_with_interactions_from_names.format(
+        name_list=" ".join('"'+n+'"@en' for n in names),
+    )
