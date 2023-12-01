@@ -14,7 +14,7 @@ def prepare_kgproject(test=True):
     # Load the class
     global kb
     if test:
-        kb = kg_backend.KnowledgeBase("files/SEQT-Onthology.ttl",
+        kb = kg_backend.KnowledgeBase("files/SEQT-Onthology.ttl", "files/db_terms_bridge.ttl",
                                       "files/SNAP-A-Box_test.ttl")
     else:
         kb = kg_backend.KnowledgeBase("files/SEQT-Onthology.ttl",
@@ -32,12 +32,24 @@ def runquery(query):
 if __name__ == "__main__":
     kb = prepare_kgproject()
     # or argparse instead of input
+    print("\n----------- Test --------------\n")
+
     drugs = ["CID000002173", "CID000003345", "CID003062316"]
     print("Query drugs: ", *drugs)
     results = kb.side_effects_drug_list(*drugs)
     print("Side effects:")
     print("\n".join(r["side_effect_term"] for r in results))
+
+    print("\n-------------------------\n")
+
     drugs = input(
-        "Give a druglist (STITCH IDs) yourself, use spaces to separate:"
+        "Give a druglist (STITCH IDs) yourself, use spaces to separate: "
     ).split(" ")
-    runquery(input("Write your query: "))
+
+    results = kb.side_effects_drug_list(*drugs)
+    print("Side effects:")
+    print("\n".join(r["side_effect_term"] for r in results))
+
+    print("\n-------------------------\n")
+    
+    runquery(input("Write your own query: "))
