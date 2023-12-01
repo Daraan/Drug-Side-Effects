@@ -52,8 +52,10 @@ if __name__ == "__main__":
     results = kb.side_effects_drug_list(*drugs)
     print("Side effects:")
     print("\n".join(r["side_effect_term"] for r in results))
+
+    print("\n-------------------------\n")
+
     drugs = input(
-        "Give a druglist (STITCH IDs) yourself, use spaces to separate:"
+        "Give a druglist (STITCH IDs) yourself, use spaces to separate: "
     ).split(" ")
     runquery(input("Write your query: "))
-# 
