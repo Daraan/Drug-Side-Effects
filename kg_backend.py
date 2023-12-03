@@ -16,6 +16,8 @@ import preprocessing as pre
 
 from pyparsing.exceptions import ParseException
 
+import time
+
 # Prepared queries for frontend
 
 # also read: https://rdflib.readthedocs.io/en/stable/intro_to_sparql.html#prepared-queries
@@ -36,16 +38,24 @@ class KnowledgeBase:
         # TODO: Add NamespaceManager !!!!
         self.graph: Graph = Graph()
         for source in sources:
+            print("parsing", source)
             self.parse(source, format="turtle")
+        print("done")
 
     def parse(self, s, *args, **kwargs):
+        start = time.time()
         try:
             return self.graph.parse(s, *args, **kwargs)
         except ParseException:
             print(s)
             raise
+        finally:
+            end = time.time()
+            if end - start > 60:
+                print("Parsing took: ", end - start, "seconds")
 
     def query(self, s, *args, **kwargs):
+        start = time.time()
         if DEBUG:
             print(s)  # set to true to print
         try:
@@ -53,6 +63,10 @@ class KnowledgeBase:
         except ParseException:
             print(s)
             raise
+        finally:
+            end = time.time()
+            if end - start > 60:
+                print("Query took: ", end - start, "seconds")
 
     def sideffect_single_drug(self, stitch_id):
         s = query_strings.sideeffect_single_drug(stitch_id)
@@ -83,6 +97,17 @@ class KnowledgeBase:
         results.extend(self.sideffect_single_drug(
             stitch_ids.pop()))  # nore more interactions
         return results
+    
+    def side_effects_of_drug_names(self, *drug_names):
+        s1 = query_strings.names_to_stitch(*drug_names)
+        stitch_results = self.query(s1)
+        print("Found stitch ids: ", stitch_results)
+        ids = (r[0].split("/")[-1] for r in stitch_results)
+        return self.side_effects_drug_list(*ids)
+
+    def all_from_names(self, *drug_names):
+        s = query_strings.all_from_names(*drug_names)
+        return self.query(s)
 
     def get_all_drugs(self):
         result = self.query("""
@@ -103,17 +128,29 @@ class KnowledgeBase:
     def result_to_df(
             self, result: Union[SPARQLResult,
                                 List[SPARQLResult]]) -> pd.DataFrame:
-        if isinstance(result, (list, tuple)):
+        if not isinstance(result, rdflib.query.ResultRow) and isinstance(result, (list, tuple)):
             return pd.concat(
                 [self.result_to_df(r) for r in result if len(r) > 0])
-        return pd.DataFrame(
-            [[toPython(r[k]) for k in self.KEYS] for r in result],
-            columns=[self.KEY_MAPPINGS[str(c)] for c in self.KEYS])
+        try:
+            if isinstance(result, rdflib.query.ResultRow):
+                return pd.DataFrame(  [[toPython(result[k]) for k in self.KEYS]],
+                                       columns=[self.KEY_MAPPINGS[str(c)] for c in self.KEYS])
+            return pd.DataFrame(
+                [[toPython(r[k]) for k in self.KEYS] for r in result],
+                columns=[self.KEY_MAPPINGS[str(c)] for c in self.KEYS])
+        except ValueError:
+            print([toPython(result[k]) for k in self.KEYS])
+            raise
+        except TypeError:
+            print("result is", result, type(result))
+
+            raise
 
     def result_to_html(self, result: Union[SPARQLResult, List[SPARQLResult]],
                        **kwargs):
         df = self.result_to_df(result)
         return df.to_html(**kwargs)
+
 
 
 

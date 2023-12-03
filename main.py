@@ -2,7 +2,7 @@ import argparse
 import pandas as pd
 import rdflib
 import kg_backend
-import IPython
+import query_strings as qs
 
 
 def run_server():
@@ -14,11 +14,17 @@ def prepare_kgproject(test=True):
     # Load the class
     global kb
     if test:
-        kb = kg_backend.KnowledgeBase("files/SEQT-Onthology.ttl", "files/db_terms_bridge.ttl",
+        kb = kg_backend.KnowledgeBase("files/SEQT-Onthology.ttl",
+                                      "files/db_terms_bridge.ttl",
                                       "files/SNAP-A-Box_test.ttl")
     else:
+        import time
+        start = time.time()
         kb = kg_backend.KnowledgeBase("files/SEQT-Onthology.ttl",
-                                      "files/SNAP-A-Box.ttl")
+                                      "files/db_terms_bridge.ttl",
+                                      "files/SNAP-A-Box-prefixed.ttl")
+        print("Loading took: ", time.time() - start)
+
     return kb
 
 
@@ -30,11 +36,20 @@ def runquery(query):
 
 
 if __name__ == "__main__":
-    kb = prepare_kgproject()
+    test = True
+    kb = prepare_kgproject(test=True)
     # or argparse instead of input
-    print("\n----------- Test --------------\n")
 
-    drugs = ["CID000002173", "CID000003345", "CID003062316"]
+    if test:
+        drugs = ["CID000002173", "CID000003345", "CID003062316"]
+    else:
+        # 'Acetylsalicylic acid': CID000002244
+        # Ibuprofen: CID000003672
+        # Paracetamol 'Acetaminophen': CID000001983
+        #
+        # drugs =["CID000002244", "CID000003672", "CID000001983"]
+        drugs = ["CID000002244", "CID000003672", "CID000001983"]
+
     print("Query drugs: ", *drugs)
     results = kb.side_effects_drug_list(*drugs)
     print("Side effects:")
@@ -46,10 +61,4 @@ if __name__ == "__main__":
         "Give a druglist (STITCH IDs) yourself, use spaces to separate: "
     ).split(" ")
 
-    results = kb.side_effects_drug_list(*drugs)
-    print("Side effects:")
-    print("\n".join(r["side_effect_term"] for r in results))
-
-    print("\n-------------------------\n")
-    
-    runquery(input("Write your own query: "))
+    runquery(input("Write your query: "))

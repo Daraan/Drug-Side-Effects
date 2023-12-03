@@ -1,0 +1,252 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<http://bio2rdf.org/sider_vocabulary:Brand-Drug-Name> a <http://bio2rdf.org/sider_vocabulary:Resource>, owl:Class ;
+	rdfs:label "Brand Drug Name [sider_vocabulary:Brand-Drug-Name]", "Brand Drug Name [sider_vocabulary:Brand-Drug-Name]"@en ;
+	dcterms:title "Brand Drug Name"@en ;
+	dcterms:identifier "sider_vocabulary:Brand-Drug-Name" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/sider_resource:bio2rdf.dataset.sider.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Brand-Drug-Name" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "sider_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/sider_vocabulary:Brand-Drug-Name" .
+
+<http://bio2rdf.org/sider_vocabulary:brand-name> a owl:ObjectProperty, <http://bio2rdf.org/sider_vocabulary:Resource> ;
+	rdfs:label "brand name [sider_vocabulary:brand-name]"@en, "brand name [sider_vocabulary:brand-name]" ;
+	dcterms:title "brand name"@en ;
+	dcterms:identifier "sider_vocabulary:brand-name" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/sider_resource:bio2rdf.dataset.sider.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "brand-name" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "sider_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/sider_vocabulary:brand-name" .
+
+<http://bio2rdf.org/sider_vocabulary:Potential-Frequency> a <http://bio2rdf.org/sider_vocabulary:Resource>, owl:Class ;
+	rdfs:label "Range-Frequency [sider_vocabulary:Potential-Frequency]"@en, "Range-Frequency [sider_vocabulary:Potential-Frequency]" ;
+	dcterms:title "Range-Frequency"@en ;
+	dcterms:identifier "sider_vocabulary:Potential-Frequency" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/sider_resource:bio2rdf.dataset.sider.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Potential-Frequency" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "sider_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/sider_vocabulary:Potential-Frequency" .
+
+<http://bio2rdf.org/sider_vocabulary:Resource> a rdfs:Resource ;
+	rdfs:label "sider resource [sider_vocabulary:Resource]", "sider resource [sider_vocabulary:Resource]" .
+
+<http://bio2rdf.org/sider_vocabulary:side-effect> a <http://bio2rdf.org/sider_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "side effect [sider_vocabulary:side-effect]"@en, "side effect [sider_vocabulary:side-effect]" ;
+	dcterms:title "side effect"@en ;
+	dcterms:identifier "sider_vocabulary:side-effect" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/sider_resource:bio2rdf.dataset.sider.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "side-effect" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "sider_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/sider_vocabulary:side-effect" .
+
+<http://bio2rdf.org/sider_vocabulary:indication> a owl:ObjectProperty, <http://bio2rdf.org/sider_vocabulary:Resource> ;
+	rdfs:label "indication [sider_vocabulary:indication]"@en, "indication [sider_vocabulary:indication]" ;
+	dcterms:title "indication"@en ;
+	dcterms:identifier "sider_vocabulary:indication" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/sider_resource:bio2rdf.dataset.sider.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "indication" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "sider_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/sider_vocabulary:indication" .
+
+<http://bio2rdf.org/sider_vocabulary:Combination-Drug> a owl:Class, <http://bio2rdf.org/sider_vocabulary:Resource> ;
+	rdfs:label "SIDER Combination-Drug [sider_vocabulary:Combination-Drug]"@en, "SIDER Combination-Drug [sider_vocabulary:Combination-Drug]" ;
+	dcterms:title "SIDER Combination-Drug"@en ;
+	dcterms:identifier "sider_vocabulary:Combination-Drug" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/sider_resource:bio2rdf.dataset.sider.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Combination-Drug" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "sider_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/sider_vocabulary:Combination-Drug" .
+
+<http://bio2rdf.org/sider_vocabulary:Drug> a owl:Class, <http://bio2rdf.org/sider_vocabulary:Resource> ;
+	rdfs:label "SIDER Drug [sider_vocabulary:Drug]"@en, "SIDER Drug [sider_vocabulary:Drug]" ;
+	dcterms:title "SIDER Drug"@en ;
+	dcterms:identifier "sider_vocabulary:Drug" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/sider_resource:bio2rdf.dataset.sider.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Drug" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "sider_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/sider_vocabulary:Drug" .
+
+<http://bio2rdf.org/sider_vocabulary:Generic-Drug-Name> a owl:Class, <http://bio2rdf.org/sider_vocabulary:Resource> ;
+	rdfs:label "Generic Drug Name [sider_vocabulary:Generic-Drug-Name]"@en, "Generic Drug Name [sider_vocabulary:Generic-Drug-Name]" ;
+	dcterms:title "Generic Drug Name"@en ;
+	dcterms:identifier "sider_vocabulary:Generic-Drug-Name" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/sider_resource:bio2rdf.dataset.sider.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Generic-Drug-Name" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "sider_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/sider_vocabulary:Generic-Drug-Name" .
+
+<http://bio2rdf.org/sider_vocabulary:generic-name> a <http://bio2rdf.org/sider_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "generic name [sider_vocabulary:generic-name]", "generic name [sider_vocabulary:generic-name]"@en ;
+	dcterms:title "generic name"@en ;
+	dcterms:identifier "sider_vocabulary:generic-name" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/sider_resource:bio2rdf.dataset.sider.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "generic-name" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "sider_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/sider_vocabulary:generic-name" .
+
+<http://bio2rdf.org/sider_vocabulary:mapping-result> a <http://bio2rdf.org/sider_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "mapping result [sider_vocabulary:mapping-result]", "mapping result [sider_vocabulary:mapping-result]"@en ;
+	dcterms:title "mapping result"@en ;
+	dcterms:identifier "sider_vocabulary:mapping-result" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/sider_resource:bio2rdf.dataset.sider.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "mapping-result" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "sider_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/sider_vocabulary:mapping-result" .
+
+<http://bio2rdf.org/sider_vocabulary:pubchem-flat-compound-id> a <http://bio2rdf.org/sider_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "pubchem flat compound id [sider_vocabulary:pubchem-flat-compound-id]"@en, "pubchem flat compound id [sider_vocabulary:pubchem-flat-compound-id]" ;
+	dcterms:title "pubchem flat compound id"@en ;
+	dcterms:identifier "sider_vocabulary:pubchem-flat-compound-id" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/sider_resource:bio2rdf.dataset.sider.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "pubchem-flat-compound-id" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "sider_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/sider_vocabulary:pubchem-flat-compound-id" .
+
+<http://bio2rdf.org/sider_vocabulary:pubchem-stereo-compound-id> a <http://bio2rdf.org/sider_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "pubchem stereo compound id [sider_vocabulary:pubchem-stereo-compound-id]", "pubchem stereo compound id [sider_vocabulary:pubchem-stereo-compound-id]"@en ;
+	dcterms:title "pubchem stereo compound id"@en ;
+	dcterms:identifier "sider_vocabulary:pubchem-stereo-compound-id" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/sider_resource:bio2rdf.dataset.sider.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "pubchem-stereo-compound-id" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "sider_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/sider_vocabulary:pubchem-stereo-compound-id" .
+
+<http://bio2rdf.org/sider_vocabulary:stitch-flat-compound-id> a <http://bio2rdf.org/sider_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "stitch flat compound id [sider_vocabulary:stitch-flat-compound-id]"@en, "stitch flat compound id [sider_vocabulary:stitch-flat-compound-id]" ;
+	dcterms:title "stitch flat compound id"@en ;
+	dcterms:identifier "sider_vocabulary:stitch-flat-compound-id" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/sider_resource:bio2rdf.dataset.sider.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "stitch-flat-compound-id" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "sider_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/sider_vocabulary:stitch-flat-compound-id" .
+
+<http://bio2rdf.org/sider_vocabulary:stitch-stereo-compound-id> a <http://bio2rdf.org/sider_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "stitch stereo compound id [sider_vocabulary:stitch-stereo-compound-id]", "stitch stereo compound id [sider_vocabulary:stitch-stereo-compound-id]"@en ;
+	dcterms:title "stitch stereo compound id"@en ;
+	dcterms:identifier "sider_vocabulary:stitch-stereo-compound-id" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/sider_resource:bio2rdf.dataset.sider.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "stitch-stereo-compound-id" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "sider_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/sider_vocabulary:stitch-stereo-compound-id" .
+
+<http://bio2rdf.org/sider_vocabulary:x-spl> a <http://bio2rdf.org/sider_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "x spl [sider_vocabulary:x-spl]", "x spl [sider_vocabulary:x-spl]"@en ;
+	dcterms:title "x spl"@en ;
+	dcterms:identifier "sider_vocabulary:x-spl" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/sider_resource:bio2rdf.dataset.sider.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "x-spl" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "sider_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/sider_vocabulary:x-spl" .
+
+<http://bio2rdf.org/sider_vocabulary:Drug-Effect> a <http://bio2rdf.org/sider_vocabulary:Resource>, owl:Class ;
+	rdfs:label "SIDER Drug-Effect [sider_vocabulary:Drug-Effect]"@en, "SIDER Drug-Effect [sider_vocabulary:Drug-Effect]" ;
+	dcterms:title "SIDER Drug-Effect"@en ;
+	dcterms:identifier "sider_vocabulary:Drug-Effect" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/sider_resource:bio2rdf.dataset.sider.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Drug-Effect" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "sider_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/sider_vocabulary:Drug-Effect" .
+
+<http://bio2rdf.org/sider_vocabulary:Range-Frequency> a <http://bio2rdf.org/sider_vocabulary:Resource>, owl:Class ;
+	rdfs:label "Range-Frequency [sider_vocabulary:Range-Frequency]", "Range-Frequency [sider_vocabulary:Range-Frequency]"@en ;
+	dcterms:title "Range-Frequency"@en ;
+	dcterms:identifier "sider_vocabulary:Range-Frequency" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/sider_resource:bio2rdf.dataset.sider.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Range-Frequency" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "sider_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/sider_vocabulary:Range-Frequency" .
+
+<http://bio2rdf.org/sider_vocabulary:Specified-Frequency> a owl:Class, <http://bio2rdf.org/sider_vocabulary:Resource> ;
+	rdfs:label "Specified-Frequency [sider_vocabulary:Specified-Frequency]"@en, "Specified-Frequency [sider_vocabulary:Specified-Frequency]" ;
+	dcterms:title "Specified-Frequency"@en ;
+	dcterms:identifier "sider_vocabulary:Specified-Frequency" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/sider_resource:bio2rdf.dataset.sider.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "Specified-Frequency" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "sider_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/sider_vocabulary:Specified-Frequency" .
+
+<http://bio2rdf.org/sider_vocabulary:drug> a owl:ObjectProperty, <http://bio2rdf.org/sider_vocabulary:Resource> ;
+	rdfs:label "drug [sider_vocabulary:drug]"@en, "drug [sider_vocabulary:drug]" ;
+	dcterms:title "drug"@en ;
+	dcterms:identifier "sider_vocabulary:drug" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/sider_resource:bio2rdf.dataset.sider.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "drug" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "sider_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/sider_vocabulary:drug" .
+
+<http://bio2rdf.org/sider_vocabulary:effect> a owl:ObjectProperty, <http://bio2rdf.org/sider_vocabulary:Resource> ;
+	rdfs:label "effect [sider_vocabulary:effect]", "effect [sider_vocabulary:effect]"@en ;
+	dcterms:title "effect"@en ;
+	dcterms:identifier "sider_vocabulary:effect" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/sider_resource:bio2rdf.dataset.sider.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "effect" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "sider_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/sider_vocabulary:effect" .
+
+<http://bio2rdf.org/sider_vocabulary:frequency> a <http://bio2rdf.org/sider_vocabulary:Resource>, owl:DatatypeProperty ;
+	rdfs:label "frequency [sider_vocabulary:frequency]", "frequency [sider_vocabulary:frequency]"@en ;
+	dcterms:title "frequency"@en ;
+	dcterms:identifier "sider_vocabulary:frequency" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/sider_resource:bio2rdf.dataset.sider.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "frequency" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "sider_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/sider_vocabulary:frequency" .
+
+<http://bio2rdf.org/sider_vocabulary:lower-frequency> a <http://bio2rdf.org/sider_vocabulary:Resource>, owl:DatatypeProperty ;
+	rdfs:label "lower frequency [sider_vocabulary:lower-frequency]", "lower frequency [sider_vocabulary:lower-frequency]"@en ;
+	dcterms:title "lower frequency"@en ;
+	dcterms:identifier "sider_vocabulary:lower-frequency" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/sider_resource:bio2rdf.dataset.sider.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "lower-frequency" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "sider_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/sider_vocabulary:lower-frequency" .
+
+<http://bio2rdf.org/sider_vocabulary:lower-level-term> a <http://bio2rdf.org/sider_vocabulary:Resource>, owl:ObjectProperty ;
+	rdfs:label "lower level term [sider_vocabulary:lower-level-term]", "lower level term [sider_vocabulary:lower-level-term]"@en ;
+	dcterms:title "lower level term"@en ;
+	dcterms:identifier "sider_vocabulary:lower-level-term" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/sider_resource:bio2rdf.dataset.sider.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "lower-level-term" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "sider_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/sider_vocabulary:lower-level-term" .
+
+<http://bio2rdf.org/sider_vocabulary:placebo> a <http://bio2rdf.org/sider_vocabulary:Resource>, owl:DatatypeProperty ;
+	rdfs:label "placebo [sider_vocabulary:placebo]"@en, "placebo [sider_vocabulary:placebo]" ;
+	dcterms:title "placebo"@en ;
+	dcterms:identifier "sider_vocabulary:placebo" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/sider_resource:bio2rdf.dataset.sider.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "placebo" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "sider_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/sider_vocabulary:placebo" .
+
+<http://bio2rdf.org/sider_vocabulary:preferred-term> a owl:ObjectProperty, <http://bio2rdf.org/sider_vocabulary:Resource> ;
+	rdfs:label "preferred term [sider_vocabulary:preferred-term]"@en, "preferred term [sider_vocabulary:preferred-term]" ;
+	dcterms:title "preferred term"@en ;
+	dcterms:identifier "sider_vocabulary:preferred-term" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/sider_resource:bio2rdf.dataset.sider.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "preferred-term" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "sider_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/sider_vocabulary:preferred-term" .
+
+<http://bio2rdf.org/sider_vocabulary:reported-frequency> a owl:ObjectProperty, <http://bio2rdf.org/sider_vocabulary:Resource> ;
+	rdfs:label "reported frequency [sider_vocabulary:reported-frequency]"@en, "reported frequency [sider_vocabulary:reported-frequency]" ;
+	dcterms:title "reported frequency"@en ;
+	dcterms:identifier "sider_vocabulary:reported-frequency" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/sider_resource:bio2rdf.dataset.sider.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "reported-frequency" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "sider_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/sider_vocabulary:reported-frequency" .
+
+<http://bio2rdf.org/sider_vocabulary:upper-frequency> a owl:DatatypeProperty, <http://bio2rdf.org/sider_vocabulary:Resource> ;
+	rdfs:label "upper frequency [sider_vocabulary:upper-frequency]"@en, "upper frequency [sider_vocabulary:upper-frequency]" ;
+	dcterms:title "upper frequency"@en ;
+	dcterms:identifier "sider_vocabulary:upper-frequency" ;
+	<http://rdfs.org/ns/void#inDataset> <http://bio2rdf.org/sider_resource:bio2rdf.dataset.sider.R3> ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:identifier> "upper-frequency" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:namespace> "sider_vocabulary" ;
+	<http://bio2rdf.org/bio2rdf_vocabulary:uri> "http://bio2rdf.org/sider_vocabulary:upper-frequency" .
+
+
