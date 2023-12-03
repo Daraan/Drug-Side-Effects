@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>SEQT</title>
+      <link rel="stylesheet" href="static/style.css">
+      <style>
+          /* Apply background image to the body */
+          body {
+              background-image: url('https://kg-project--daraan.repl.co/static/markus-spiske-k-o-Icw5J80-unsplash.jpg'); /* Replace 'your_image_url.jpg' with the actual image URL */
+              background-size: cover; /* Cover the entire viewport */
+              background-position: relative; /* Center the image */
+              background-repeat: no-repeat; /* Do not repeat the image */
+              text-align: left; /* Center-align the content */
+              color: black; /* Text color on top of the background image */
+          }
+
+
+        /* Center-align the h1 tag */
+          h1 {
+              text-align: center;
+          }
+
+          #query-result-box {
+              margin: 20px auto; /* Adjust margin as needed */
+              padding: 20px; /* Adjust padding as needed */
+              border: 2px solid black; /* Adjust border properties as needed */
+              border-radius: 10px; /* Optional: Add border radius for rounded corners */
+          }
+
+        /* Style for the Side Effects heading */
+          #query-result-box h3 {
+              color: black; /* Adjust text color as needed */
+          }
+        
+      </style>
+  </head>
+<body>
+
+    <!-- Heading (h1 tag) -->
+    <h1>SEQT</h1>
+
+    <!-- Heading 2 (h2 tag) -->
+    <h2>About SEQT</h2>
+
+    <!-- Paragraph below Heading 2 -->
+    <p>Want to know the possible side effects of the drug or the combination of drugs you are taking? SEQT can give you an idea about the side effects. Simply enter the drug or combination of drugs you are using and click on 'Search side effects' button.
+<br>
+<p><strong>Disclaimer: This platform is intended solely for informational purposes. Prior to the consumption of any medications, we strongly advise consulting with a qualified medical professional.</strong></p>
+
+    <!-- Text fields for SPARQL query input -->
+    <form id="sparqlForm">
+        <label for="input1">Drug 1:</label>
+        <input type="text" id="input1" name="input1" maxlength="30" style="width: 150px;" required>
+        <br>
+        <label for="input2">Drug 2:</label>
+          <input type="text" id="input2" name="input2" maxlength="30" style="width: 150px;">
+        <br>
+        <button type="button" onclick="submitForm()">Search Side Effects</button>
+    </form>
+
+    <!-- Result of the SPARQL query will be displayed here -->
+    <div id="query-result-box" style="display: none;">
+        <h3>Side Effects</h3>
+        <div id="query-result">
+          <!-- Result will be shown here -->
+        </div>
+    </div>
+
+
+
+    <script>
+        function submitForm() {
+            var input1 = document.getElementById("input1").value;
+            var input2 = document.getElementById("input2").value;
+
+            // Make an AJAX request to the Flask backend
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "/runquery", true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    // Update the "query-result" div with the result
+                    document.getElementById("query-result").innerHTML = xhr.responseText;
+
+                    // Show the result box when there is a result
+                    document.getElementById("query-result-box").style.display = "block";
+                }
+            };
+
+            // Prepare the data to send
+            var data = JSON.stringify({ input1: input1, input2: input2 });
+            xhr.send(data);
+        }
+    </script>
+
+
+</body>
+</html>
+
