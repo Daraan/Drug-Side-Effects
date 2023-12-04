@@ -7,7 +7,7 @@ def run_server():
     app.run(host='0.0.0.0', port=81)
 
 
-def prepare_kgproject(test=True):
+def prepare_kgproject(test=False):
     # Load the class
     global kb
     import time
@@ -37,8 +37,9 @@ def runquery(query):
 
 
 if __name__ == "__main__":
-    run_server()
-    test = False
+    #run_server()
+    print("Server start skipped.")
+    test = True
     kb = prepare_kgproject(test=test)
     # or argparse instead of input
 

@@ -10,10 +10,13 @@ app = Flask(__name__)
 def index():
   return render_template('index.html')
 
-
-def prepare_kgproject(test=True):
+kb = None
+def prepare_kgproject(test=False):
   # Load the class
   global kb
+  if kb is not None:
+    return kb
+  
   if test:
     kb = kg_backend.KnowledgeBase("files/DEMO_KG.ttl")
   else:
@@ -21,7 +24,7 @@ def prepare_kgproject(test=True):
     start = time.time()
     kb = kg_backend.KnowledgeBase("files/SEQT-Onthology.ttl",
                                   "files/db_terms_bridge.ttl",
-                                  "files/SNAP-A-Box-prefixed.ttl")
+                                  "files/SNAP-A-Box_test.ttl")
     print("Loading took: ", time.time() - start)
 
   return kb
@@ -59,7 +62,7 @@ def run_query():
 
   # Process the input values (comma-separated)
   stitch_ids = [id.strip() for id in input_values.split(',')]
-  print("inputs are", stitch_ids)
+  print("Query drugs: ", *stitch_ids)
   kb = prepare_kgproject(test=True)
   # Call your side_effects_drug_list function
   results = kb.side_effects_of_drug_names(*stitch_ids)
@@ -68,6 +71,7 @@ def run_query():
   formatted_results = [
       str(r) for result in results for r in result if isinstance(r, Literal)
   ]
+  print("Results: ", formatted_results)
 
   # Join the formatted results with commas
   response_text = ", ".join(
