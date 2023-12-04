@@ -18,10 +18,15 @@ def prepare_kgproject(test=True):
         kb = kg_backend.KnowledgeBase("files/SEQT-Onthology.ttl", "files/db_terms_bridge.ttl",
                                       "files/SNAP-A-Box_test.ttl")
     else:
+        # NOTE THIS IS TOO Large
         import time
         start = time.time()
-        kb = kg_backend.KnowledgeBase("files/SEQT-Onthology.ttl", "files/db_terms_bridge.ttl",
-                                      "files/SNAP-A-Box-prefixed.ttl")
+        kb = kg_backend.KnowledgeBase("files/DEMO_KG.ttl")
+        #                              "files/db_terms_bridge.ttl",
+        #                              "files/SNAP-A-Box-prefixed.ttl")
+        #kb = kg_backend.KnowledgeBase("files/SEQT-Onthology.ttl",
+        #                              "files/db_terms_bridge.ttl",
+        #                              "files/SNAP-A-Box-prefixed.ttl")
         print("Loading took: ", time.time() - start)
         
     return kb
@@ -35,8 +40,9 @@ def runquery(query):
 
 
 if __name__ == "__main__":
-    test = True
-    kb = prepare_kgproject(test=True)
+    test = False
+    #run_server()
+    kb = prepare_kgproject(test=test)
     # or argparse instead of input
     if test:
         drugs = ["CID000002173", "CID000003345", "CID003062316"]
@@ -44,19 +50,25 @@ if __name__ == "__main__":
         # 'Acetylsalicylic acid': CID000002244
         # Ibuprofen: CID000003672
         # Paracetamol 'Acetaminophen': CID000001983
-        # 
-        # drugs =["CID000002244", "CID000003672", "CID000001983"] 
-        drugs =["CID000002244", "CID000003672", "CID000001983"] 
+        #
+        # drugs =["CID000002244", "CID000003672", "CID000001983"]
+        drugs = ["CID000002244", "CID000003672", "CID000001983"]
+    drug_names = ['Acetylsalicylic acid', "Ibuprofen", 'Acetaminophen']
 
     print("Query drugs: ", *drugs)
     results = kb.side_effects_drug_list(*drugs)
     print("Side effects:")
     print("\n".join(r["side_effect_term"] for r in results))
 
+    print("Query drug names: ", drug_names)
+    results = kb.side_effects_of_drug_names(*drug_names)
+    print("Side effects:")
+    print("\n".join(r["side_effect_term"] for r in results))
+
     print("\n-------------------------\n")
 
-    drugs = input(
-        "Give a druglist (STITCH IDs) yourself, use spaces to separate: "
-    ).split(" ")
-    runquery(input("Write your query: "))
-# 
+    #drugs = input(
+    #    "Give a druglist (STITCH IDs) yourself, use spaces to separate: "
+    #).split(" ")
+
+    #runquery(input("Write your query: "))

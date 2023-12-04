@@ -212,6 +212,9 @@ def name_to_stitch(name):
 def names_to_stitch(*names):
     return _names_to_stitch.format(name_list=" ".join('"'+n+'"@en' for n in names))
 
+
+
+# One QUery to rule them all. Does not work :/ VALUES, SELECT UNION ...
 _string_drug_side_effects_with_interactions_from_names = PREFIXE + f"""
 SELECT * WHERE
 {{{{
