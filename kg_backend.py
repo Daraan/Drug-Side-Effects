@@ -46,7 +46,7 @@ def prepare_kgproject(test=False):
                                       "files/SNAP-A-Box_test.ttl")
     else:
         # NOTE THIS IS TOO Large
-        kb = KnowledgeBase("files/DEMO_KG2.ttl", "files/SNAP-A-Box_test.ttl")
+        kb = KnowledgeBase("files/DEMO_KG3.ttl")
         #                              "files/db_terms_bridge.ttl",
         #                              "files/SNAP-A-Box-prefixed.ttl")
         #kb = kg_backend.KnowledgeBase("files/SEQT-Onthology.ttl",
