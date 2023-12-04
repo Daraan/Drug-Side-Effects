@@ -10,24 +10,6 @@ app = Flask(__name__)
 def index():
   return render_template('index.html')
 
-kb = None
-def prepare_kgproject(test=False):
-  # Load the class
-  global kb
-  if kb is not None:
-    return kb
-  
-  if test:
-    kb = kg_backend.KnowledgeBase("files/DEMO_KG.ttl")
-  else:
-    import time
-    start = time.time()
-    kb = kg_backend.KnowledgeBase("files/SEQT-Onthology.ttl",
-                                  "files/db_terms_bridge.ttl",
-                                  "files/SNAP-A-Box_test.ttl")
-    print("Loading took: ", time.time() - start)
-
-  return kb
 
 
 # @app.route("/runquery", methods=["POST"])
@@ -63,7 +45,7 @@ def run_query():
   # Process the input values (comma-separated)
   stitch_ids = [id.strip() for id in input_values.split(',')]
   print("Query drugs: ", *stitch_ids)
-  kb = prepare_kgproject(test=True)
+  kb = kg_backend.prepare_kgproject(test=False)
   # Call your side_effects_drug_list function
   results = kb.side_effects_of_drug_names(*stitch_ids)
 

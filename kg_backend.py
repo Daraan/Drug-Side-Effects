@@ -32,6 +32,30 @@ toPython = methodcaller(
 DEBUG = False
 
 
+kb = None
+def prepare_kgproject(test=False):
+    # Load the class
+    global kb
+    if kb is not None:
+        return kb
+    import time
+    start = time.time()
+    if test:
+        kb = KnowledgeBase("files/SEQT-Onthology.ttl",
+                                      "files/db_terms_bridge.ttl",
+                                      "files/SNAP-A-Box_test.ttl")
+    else:
+        # NOTE THIS IS TOO Large
+        kb = KnowledgeBase("files/DEMO_KG2.ttl", "files/SNAP-A-Box_test.ttl")
+        #                              "files/db_terms_bridge.ttl",
+        #                              "files/SNAP-A-Box-prefixed.ttl")
+        #kb = kg_backend.KnowledgeBase("files/SEQT-Onthology.ttl",
+        #                              "files/db_terms_bridge.ttl",
+        #                              "files/SNAP-A-Box-prefixed.ttl")
+    print("Loading took: ", time.time() - start)
+
+    return kb
+
 class KnowledgeBase:
 
   def __init__(self, *sources):
@@ -84,21 +108,21 @@ class KnowledgeBase:
       print(r)
     return results
 
-  # def side_effects_drug_list(self, *stitch_ids):
-  #   results: List[rdflib.query.Result] = []
-  #   stitch_ids = list(stitch_ids)
-  #   while len(stitch_ids) > 1:
-  #     stitch_id = stitch_ids.pop()
-  #     s = query_strings.drug_side_effect_and_interactions(
-  #         stitch_id, *stitch_ids)
-  #     result: rdflib.query.Result = self.query(s)
-  #     results.extend(result)
-  #   #NOTE: TODO: Below works, uncomment when above works too,
-  #   results.extend(self.sideffect_single_drug(
-  #       stitch_ids.pop()))  # nore more interactions
-  #   return results
-
   def side_effects_drug_list(self, *stitch_ids):
+     results: List[rdflib.query.Result] = []
+     stitch_ids = list(stitch_ids)
+     while len(stitch_ids) > 1:
+       stitch_id = stitch_ids.pop()
+       s = query_strings.drug_side_effect_and_interactions(
+           stitch_id, *stitch_ids)
+       result: rdflib.query.Result = self.query(s)
+       results.extend(result)
+     #NOTE: TODO: Below works, uncomment when above works too,
+     results.extend(self.sideffect_single_drug(
+         stitch_ids.pop()))  # nore more interactions
+     return results
+
+  def side_effects_drug_list2(self, *stitch_ids):
     results: List[rdflib.query.Result] = []
     stitch_ids = list(stitch_ids)
 
