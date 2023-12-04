@@ -4,6 +4,7 @@
 __pycache__
 files/SNAP-A-Box.ttl
 files/SNAP-A-Box-prefixed.ttl
+files/*
 .breakpoints
 env/
 *.zip

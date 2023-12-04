@@ -66,7 +66,7 @@ if __name__ == "__main__":
     print("Side effects:")
     print("\n".join(r["side_effect_term"] for r in results))
 
-    print("\n-------------------------\n")
+    print("\n--------- END ----------------\n")
 
     #drugs = input(
     #    "Give a druglist (STITCH IDs) yourself, use spaces to separate: "
