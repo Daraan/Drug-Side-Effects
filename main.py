@@ -1,8 +1,5 @@
-import argparse
-import pandas as pd
 import rdflib
 import kg_backend
-import query_strings as qs
 
 
 def run_server():
@@ -13,21 +10,21 @@ def run_server():
 def prepare_kgproject(test=True):
     # Load the class
     global kb
+    import time
+    start = time.time()
     if test:
         kb = kg_backend.KnowledgeBase("files/SEQT-Onthology.ttl",
                                       "files/db_terms_bridge.ttl",
                                       "files/SNAP-A-Box_test.ttl")
     else:
         # NOTE THIS IS TOO Large
-        import time
-        start = time.time()
         kb = kg_backend.KnowledgeBase("files/DEMO_KG.ttl")
         #                              "files/db_terms_bridge.ttl",
         #                              "files/SNAP-A-Box-prefixed.ttl")
         #kb = kg_backend.KnowledgeBase("files/SEQT-Onthology.ttl",
         #                              "files/db_terms_bridge.ttl",
         #                              "files/SNAP-A-Box-prefixed.ttl")
-        print("Loading took: ", time.time() - start)
+    print("Loading took: ", time.time() - start)
 
     return kb
 
@@ -40,8 +37,8 @@ def runquery(query):
 
 
 if __name__ == "__main__":
+    run_server()
     test = False
-    #run_server()
     kb = prepare_kgproject(test=test)
     # or argparse instead of input
 

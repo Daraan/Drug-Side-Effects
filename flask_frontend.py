@@ -59,16 +59,19 @@ def run_query():
 
   # Process the input values (comma-separated)
   stitch_ids = [id.strip() for id in input_values.split(',')]
+  print("inputs are", stitch_ids)
   kb = prepare_kgproject(test=True)
   # Call your side_effects_drug_list function
   results = kb.side_effects_of_drug_names(*stitch_ids)
 
-  # Convert results to a formatted response (adjust as needed)
-  formatted_result = [str(r) for r in results]
+  # Extract and format the desired values
+  formatted_results = [
+      str(r) for result in results for r in result if isinstance(r, Literal)
+  ]
 
   # Join the formatted results with commas
   response_text = ", ".join(
-      formatted_result) if formatted_result else 'Not found'
+      formatted_results) if formatted_results else 'Not found'
 
   return Response(response=response_text,
                   content_type='text/plain;charset=utf-8')
