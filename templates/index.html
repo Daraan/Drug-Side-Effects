@@ -71,6 +71,9 @@
 
   <script>
       function submitForm() {
+        //clear previous results  
+          document.getElementById("query-result").innerHTML = "";
+          
           var input = document.getElementById("input").value;
 
           // Make an AJAX request to the Flask backend
