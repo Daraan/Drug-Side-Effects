@@ -45,9 +45,9 @@ def run_query():
   # Process the input values (comma-separated)
   stitch_ids = [id.strip() for id in input_values.split(',')]
   print("Query drugs: ", *stitch_ids)
-  kb = kg_backend.prepare_kgproject(test=False)
+  kb = kg_backend.prepare_kgproject(test=None) # controlled over kg_backend.MODE == "test"
   # Call your side_effects_drug_list function
-  results = kb.side_effects_of_drug_names(*stitch_ids)
+  results = kb.side_effects_of_drug_names_one_query(*stitch_ids)
 
   # Extract and format the desired values
   formatted_results = [

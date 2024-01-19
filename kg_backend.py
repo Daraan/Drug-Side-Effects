@@ -29,24 +29,27 @@ from operator import methodcaller, itemgetter
 toPython = methodcaller(
     "toPython")  # converts results to python objects, e.g. not as URI objects
 
-DEBUG = False
+DEBUG = True
+MODE = "test"
 
 
 kb = None
-def prepare_kgproject(test=False):
+def prepare_kgproject(test=None):
     # Load the class
     global kb
     if kb is not None:
         return kb
+    if test is None:
+        test = MODE.lower() == "test"
     import time
     start = time.time()
     if test:
+        kb = KnowledgeBase("files/DEMO_KG3.ttl")
+    else:
         kb = KnowledgeBase("files/SEQT-Onthology.ttl",
                                       "files/db_terms_bridge.ttl",
-                                      "files/SNAP-A-Box_test.ttl")
-    else:
+                                      "files/SNAP-A-Box-prefixed.ttl")
         # NOTE THIS IS TOO Large
-        kb = KnowledgeBase("files/DEMO_KG3.ttl")
         #                              "files/db_terms_bridge.ttl",
         #                              "files/SNAP-A-Box-prefixed.ttl")
         #kb = kg_backend.KnowledgeBase("files/SEQT-Onthology.ttl",
@@ -108,7 +111,16 @@ class KnowledgeBase:
       print(r)
     return results
 
-  def side_effects_drug_list(self, *stitch_ids):
+  def side_effects_drug_list_fast(self, *stitch_ids) -> List[rdflib.query.Result]:
+    if len(stitch_ids) == 0:
+      return []
+    s = query_strings.drug_side_effect_and_interactions_fast(*stitch_ids)
+    result: rdflib.query.Result = self.query(s)
+    return result
+
+  def side_effects_drug_list(self, *stitch_ids) -> List[rdflib.query.Result]:
+     if len(stitch_ids) == 0:
+        return []
      results: List[rdflib.query.Result] = []
      stitch_ids = list(stitch_ids)
      while len(stitch_ids) > 1:
@@ -146,7 +158,24 @@ class KnowledgeBase:
     # ids = list(r[0].split("/")[-1] for r in stitch_results)
     ids = [str(r[0]).split("/")[-1] for r in stitch_results]
     print("Found stitch ids: ", ids)
-    return self.side_effects_drug_list(*ids)
+    if len(ids) > 1:
+      return self.side_effects_drug_list(*ids)
+    if len(ids) == 1:
+      return self.sideffect_single_drug(ids[0])
+    return []
+  
+  def side_effects_of_drug_names_one_query(self, *drug_names):
+    #raise NotImplementedError("Does currently not get interactions.")
+    s1 = query_strings.names_to_stitch(*drug_names)
+    stitch_results = self.query(s1)
+    # ids = list(r[0].split("/")[-1] for r in stitch_results)
+    ids = [str(r[0]).split("/")[-1] for r in stitch_results]
+    print("Found stitch ids: ", ids)
+    if len(ids) > 1:
+      return self.side_effects_drug_list_fast(*ids)
+    if len(ids) == 1:
+      return self.sideffect_single_drug(ids[0])
+    return []
 
   def all_from_names(self, *drug_names):
     s = query_strings.all_from_names(*drug_names)

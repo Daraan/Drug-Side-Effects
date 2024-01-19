@@ -94,10 +94,29 @@ SELECT ?side_effect_source ?side_effect_code ?side_effect_term
 """
 
 
+
+
 def sideeffect_drug_drug(stitch_id1, stitch_id2):
     return _string_drug_drug_interactions.format(stitch_id=stitch_id1,
                                                  other_drugs=STITCH_NAMESPACE +
                                                  ":" + stitch_id2)
+
+
+_string_drug_drug_interactions2 = PREFIXE + f"""
+SELECT ?side_effect_source ?side_effect_code ?side_effect_term
+WHERE {{{{
+        VALUES ?s1 {{{{ {{all_drugs}}  }}}}
+        VALUES ?id2 {{{{  {{all_drugs}}   }}}}
+        FILTER (?s1 != ?id2)
+        ?s1 {DB_VOC}:ddi-interactor-in ?side_effect_source .
+        ?id2 {DB_VOC}:ddi-interactor-in ?side_effect_source .
+        
+        ?side_effect_source {SIDER}:side-effect ?side_effect_code .
+        ?side_effect_code {SIDER}:preferred-term ?side_effect_term .
+    }}}}
+"""
+def sideeffect_drug_drug_v2(*all_ids):
+    return _string_drug_drug_interactions2.format(all_drugs=":" + " :".join(all_ids))
 
 
 # BETTER query make UNION of SIDE codes
@@ -117,7 +136,7 @@ SELECT * WHERE
   }}}}
   UNION
   {{{{
-    SELECT ?side_effect_source ?side_effect_code ?side_effect_term
+    SELECT DISTINCT ?side_effect_source ?side_effect_code ?side_effect_term
     WHERE {{{{
         VALUES ?s1 {{{{ {STITCH_NAMESPACE}:{{stitch_id}}  }}}}
         VALUES ?id2 {{{{  {{other_drugs}}   }}}}
@@ -136,6 +155,43 @@ def drug_side_effect_and_interactions(stitch_id, *other_ids):
     s = _string_drug_side_effects_with_interactions.format(
         stitch_id=stitch_id,
         other_drugs=":" + " :".join(other_ids),  # add : for first
+    )
+    return s
+
+
+# NOT WORKING
+_string_drug_side_effects_with_interactions_fast = PREFIXE + f"""
+SELECT DISTINCT * WHERE
+{{{{
+  {{{{
+    SELECT ?side_effect_source ?side_effect_code ?side_effect_term
+    WHERE {{{{
+        VALUES ?side_effect_source {{{{ {{all_drugs}}  }}}} 
+        ?side_effect_source {SIDER}:side-effect ?side_effect_code .
+        ?side_effect_code {SIDER}:preferred-term ?side_effect_term .
+    }}}}
+  }}}}
+  UNION
+  {{{{
+    SELECT DISTINCT ?side_effect_source ?side_effect_code ?side_effect_term
+    WHERE {{{{
+        VALUES ?s1 {{{{ {{all_drugs}}  }}}}
+        VALUES ?id2 {{{{  {{all_drugs}}   }}}}
+        FILTER (?s1 != ?id2)
+        ?s1 {DB_VOC}:ddi-interactor-in ?side_effect_source .
+        ?id2 {DB_VOC}:ddi-interactor-in ?side_effect_source .
+        
+        ?side_effect_source {SIDER}:side-effect ?side_effect_code .
+        ?side_effect_code {SIDER}:preferred-term ?side_effect_term .
+    }}}}
+  }}}}
+}}}}
+"""
+
+
+def drug_side_effect_and_interactions_fast(*all_ids):
+    s = _string_drug_side_effects_with_interactions_fast.format(
+        all_drugs=":" + " :".join(all_ids),  # add : for first
     )
     return s
 

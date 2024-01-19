@@ -5,18 +5,26 @@ kg_backend.DEBUG = False
 
 def run_server():
     from flask_frontend import app
-    app.run(host='0.0.0.0', port=8888)
+    app.run(host='0.0.0.0', port=8888 if kg_backend.MODE == "test" else 8889)
 
 
 def runquery(query):
     # query could be list of medicienes
-    kb = kg_backend.prepare_kgproject(test=test)
+    kb = kg_backend.prepare_kgproject(test=None)
+    kg_backend.DEBUG = True
     results = kg_backend.kb.query(query)
     # TODO: could be nicer
     print("\n".join(str(r) for r in results))
 
 
 if __name__ == "__main__":
+    import sys
+    print("ARGS: ", sys.argv)
+    if "all" in sys.argv:
+        kg_backend.MODE = "all"
+    else:
+        kg_backend.MODE = "test"
+    print("MODE: ", kg_backend.MODE)
     if True:
         run_server()
     else:
